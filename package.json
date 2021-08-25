@@ -1,0 +1,19 @@
+{
+  "name": "assignments2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^5.3.1",
+    "lite-server": "^2.6.1",
+    "node": "^16.6.1",
+    "webpack": "^5.49.0"
+  }
+}
