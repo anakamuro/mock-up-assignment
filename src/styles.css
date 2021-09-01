@@ -53,10 +53,6 @@ body {
     padding-left: 25px;
   }
 
-  container {
-    display: flex;
-    flex-direction: row;
-  }
   .container {
     display: grid;
     grid-template-areas: 
@@ -141,6 +137,7 @@ body {
   border-radius: 9999px;
   background-color: white;
   border: 2px solid  hsl(0, 0%, 90%);
+  font-family: 'Raleway', sans-serif;
    }
 
    .pills{
@@ -233,15 +230,14 @@ body {
     display: inline;
   }
 
-  .fa-info-circle{
-    color: white;
-    background-color:  #0065FC;
-  }
-
   .circle-icon {
     background: #ffc0c0;
     padding:30px;
     border-radius: 50%;
+}
+
+header .info {
+  padding-top: -100px;
 }
   
 .card-container {
@@ -266,7 +262,7 @@ body {
    border-radius: 5%;
   }
 
-  container .container .cards .card a{
+   .container .cards .card a{
     color: black;
   }
   .card a:hover {
@@ -277,9 +273,10 @@ body {
    border-radius: 5%;
   }
 
-  .card-content {
+  .card .card-content {
     line-height: 10px;
     display: inline;
+    color: black;
 }
 
 .fa-star {
@@ -303,7 +300,7 @@ body {
 }
 
 pre {
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .cards-2 {
@@ -319,8 +316,9 @@ pre {
   border-radius: 5%;
 }
 
-.card-2 img {
+.side-container .cards-2 .card-2 img {
   border-radius: 5%;
+  height: 135px;
 }
 .card-content2 {
   width: 100%;
@@ -347,6 +345,11 @@ pre {
   justify-content: space-between;
 }
 
+.pictures .picture .pic img {
+  width: 270px;
+  height: 150px
+}
+
 .pic {
   border-radius: 25px;
   border: 1px solid  #F2F2F2;;
@@ -354,6 +357,7 @@ pre {
 .pic img {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  width: 300px;
 }
 
 aside a {
@@ -373,7 +377,16 @@ footer {
   gap: 25px;
 }
 
-@media only screen and (min-width : 411px){
+@media only screen and (min-width : 320px){
+  nav .nav-right ul li .sign{
+    text-combine-upright: all;
+  }
+  nav .nav-right ul {
+    display: flex;
+    position: relative;
+    left: 50px;
+  }
+
   nav .nav-right ul li a:nth-of-type(1) {
     border-bottom: 3px solid  hsl(216, 100%, 49%);
     color:hsl(216, 100%, 49%);
@@ -382,14 +395,19 @@ footer {
     border-bottom: 3px solid #F2F2F2;
     color: #F2F2F2;
   }
-  ul li:nth-child(3){
+  nav .nav-right ul li:nth-of-type(3){
     position: relative;
-    top: -110px;
-    left: 200px;
+    top: -70px;
+    left: -70px;
   }
+
+  header .text {
+    font-size: 14px;
+  }
+  
   .search-box {
     position: relative;
-    left: 20px;
+    left: 0px;
   }
   .filters {
     display: block;
@@ -400,16 +418,198 @@ footer {
     left: -20px;
   }
   button.pill:nth-child(1){
-    width: 150px;
+    width: 120px;
     height: 30px;
+    display: inline;
+    position: relative;
+    top: -25px;
   }
   button.pill:nth-child(2){
     width: 150px;
     height: 30px;
+    position: relative;
+    top: -25px;
+    left: -5px;
   }
   button.pill:nth-child(3) {
     width: 250px;
     height: 30px;
+    position: relative;
+    top: -25px;
+    left: -8px;
+    }
+
+  button.pill:nth-child(4) {
+    width: 240px;
+    height: 30px;
+    position: relative;
+    top: -25px;
+    }
+
+  .info {
+    padding: 3%;
+    margin: 0 auto;
+   position: relative;
+   left: -20px;
+  }
+
+  .infotext{
+    font-size: 14px;
+    position: relative;
+    left: -20px;
+    object-fit: fill;
+    font-weight: bold;
+  }
+  .container {
+    display: grid;
+    grid-template-areas: 
+    'b b'
+    'a a';
+    gap: 20px;
+  }
+  .card-container {
+    width: 80%;
+    grid-area: a;
+    position: relative;
+    left: -20px;
+    top: 20px;
+    background-color: transparent;
+    padding-top: 30px;
+  }
+  .card-container .cards .card {
+    width: 240px;
+  }
+  .card-container .cards .card img {
+    width: 240px;
+  }
+
+  .side-container {
+    width: 80%;
+    height: 100%;
+    grid-area: b;
+    position: relative;
+    left: 0px;
+    }
+  .side-container .fa-chart-line{
+      float: right;
+    }
+   .cards {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .side-container .cards-2 .card-2 img {
+     height: 215px;
+   }
+   .pictures {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     left: -38px;
+     }
+
+  .lists {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    position: relative;
+    left: 10px;
+  } 
+  aside .pictures .pic {
+    width: 270px;
+  }
+
+
+  aside .pictures .pic img {
+    width: 270px;
+    height: 130px;
+  }
+  
+  .card {
+    position: relative;
+    left: 30px;
+    width: 300px;
+  }
+
+  .card-container .cards .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  i .fa-eur{
+    display: inline-block;
+  }
+  .title {
+    position: relative;
+    left: 40px;
+  }
+
+  .card-2{
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .card-2 img {
+    position: relative;
+    top: 5px;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    left: -10px;
+  }
+}
+
+
+@media only screen and (min-width : 411px){
+  nav .nav-right ul li a:nth-of-type(1) {
+    border-bottom: 3px solid  hsl(216, 100%, 49%);
+    color:hsl(216, 100%, 49%);
+    position: relative;
+    left: -60px;
+  }
+  nav .nav-right ul li a:nth-of-type(2) {
+    border-bottom: 3px solid #F2F2F2;
+    color: #F2F2F2;
+  }
+  nav .nav-right ul li:nth-of-type(3){
+    position: relative;
+    top: -70px;
+    left: -100px;
+  }
+  .search-box {
+    position: relative;
+    left: 20px;
+  }
+  .filters {
+    display: block;
+  }
+  .pills {
+    position: relative;
+    top: 20px;
+    left: -20px;
+  }
+  button.pill:nth-child(1){
+    width: 150px;
+    height: 30px;
+    position: relative;
+    top: -30px;
+  }
+  button.pill:nth-child(2){
+    width: 150px;
+    height: 30px;
+    position: relative;
+    left: -5px;
+    top: -31px;
+  }
+  button.pill:nth-child(3) {
+    width: 250px;
+    height: 30px;
+    position: relative;
+    left: 0px;
     }
 
   button.pill:nth-child(4) {
@@ -429,11 +629,6 @@ footer {
     left: -20px;
     object-fit: fill;
   }
-
-  container {
-    display: flex;
-    flex-direction: column;
-  }
   .container {
     display: grid;
     grid-template-areas: 
@@ -445,20 +640,29 @@ footer {
     width: 100%;
     grid-area: a;
     position: relative;
-    left: 0px;
+    left: -10px;
     top: 20px;
+    background-color: transparent;
+    padding-top: 30px;
   }
+  .card-container .cards .card {
+    width: 300px;
+  }
+
+  .card-container .cards .card img {
+    width: 300px;
+  }
+
   .side-container {
-    width: 90%;
+    width: 80%;
     height: 100%;
     grid-area: b;
     position: relative;
-    left: -5px;
+    left: 0px;
     }
   .side-container .fa-chart-line{
       float: right;
     }
-
    .cards {
      display: flex;
      flex-direction: column;
@@ -481,20 +685,23 @@ footer {
   aside {
     position: relative;
     left: 50px;
+  } 
+  aside .pictures .pic {
+    width: 270px;
   }
-  aside img {
-    width: 300px;
+
+
+  aside .pictures .pic img {
+    width: 270px;
     height: 130px;
   }
-  .card-container {
-    background-color: transparent;
-    padding-top: 30px;
-  }
+  
   .card {
     position: relative;
     left: 30px;
+    width: 300px;
   }
-  .card-content {
+  .card-container .cards .card-content {
     display: flex;
     flex-direction: column;
   }
@@ -510,16 +717,28 @@ footer {
     margin: 0 auto;
     width: 80%;
   }
+
+  .card-2 img {
+    position: relative;
+    top: 5px;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+  }
   footer {
     position: relative;
     width: 100%;
-    left: -25px;
+    left: -15px;
   }
 }
 
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
    nav .nav-right ul li a:nth-child(1) {
     border: none;
+  }
+
+  nav .nav-right ul {
+    position: relative;
+    left: -50px;
   }
   ul li {
     position: relative;
@@ -528,24 +747,57 @@ footer {
   ul li:nth-child(2){
     color: black;
   }
-  ul li:nth-child(3){
+  nav .nav-right ul li:nth-child(3){
     position: relative;
     top: 0px;
-    left: 0px;
+    left: -60px;
   }
-  .cards {
+
+  .search-box {
+    position: relative;
+    left: -7px;
+  }
+
+  .pill:nth-child(1) {
+    position: relative;
+    left: 15px;
+  }
+  header .pills .pill:nth-child(2) {
+    position: relative;
+    left: 15px;
+    top: -30px;
+  }
+  
+  header .pills .pill:nth-child(3) {
+    position: relative;
+    top: -29px;
+    left: 10px;
+    
+  }
+  header .pills .pill:nth-child(4) {
+    position: relative;
+    left: 15px;
+  }
+  .card-container .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 180px 180px 180px;
+    grid-template-rows: 160px 160px 160px;
     gap: 10px;
   }
 
   .card-container {
-    width: 100%;
-    padding-top: 100px;
+    width: 80%;
+    position: relative;
+    top: 10px;
+    left: -30px;
+   }
+
+   .show {
+     position: relative;
+     top: 50px;
    }
   .side-container {
-    height: 90%;
+    height: 100%;
   }
 
   .side-container .fa-chart-line{
@@ -556,16 +808,28 @@ footer {
     position: relative;
     left: 30px;
   }
-  aside img {
-    width: 150px;
+  aside .pictures .picture .pic  {
+    width: 100px;
     height: 130px;
   }
-  .picture:nth-child(1) img {
-    width: 150px;
+  aside .pictures .picture:nth-child(1)  {
+    width: 100px;
     height: 400px;
   }
-  .picture:nth-child(3) img {
-    width: 150px;
+  aside .pictures .picture:nth-child(3) {
+    width: 100px;
+    height: 400px;
+  }
+  aside .pictures .picture .pic img {
+    width: 100px;
+    height: 100px;
+  }
+  aside .pictures .picture:nth-child(1) img {
+    width: 100px;
+    height: 400px;
+  }
+  aside .pictures .picture:nth-child(3) img {
+    width: 100px;
     height: 400px;
   }
   
@@ -577,13 +841,19 @@ footer {
   
   footer {
     width: 100%;
+    position:relative;
+    top: 20px;
   }
 }
 
 @media only screen and (min-width : 1024px){
-   .nav-right li a {
+   nav .nav-right ul li a {
      border-bottom: none;
    }
+   nav .nav-right ul li:nth-of-type(2) {
+    border-bottom: none;
+    color: black;
+  }
    li:nth-child(1){
     color: #0065FC;
   }
@@ -603,14 +873,20 @@ footer {
   .pills {
     display: inline;
     position: relative;
-    top: -5px;
+    top: 25px;
   }
-  .cards {
+  .pills .pill:nth-child(4) {
+   position: relative;
+   top: -30px;
+  }
+
+  .card-container .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px 200px;
     gap: 10px;
   }
+  
   .container {
     display: grid;
     grid-template-areas: 
@@ -621,38 +897,51 @@ footer {
   .side-container {
     grid-area: b;
     width: 80%;
-    height: 93%;
+    height: 100%;
     background-color: hsl(0, 0%, 90%);
     margin: 2%;
     border-radius: 2%;
     position: relative;
     left: 70px;
-    top: 30px;
+    top: -42px;
     padding-right: 0px;
+  }
+
+  .side-container .cards-2 .card-2 img {
+    border-radius: 5%;
+    height: 150px;
   }
   .lists {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     gap: 25px;
   }
+  header .info {
+    position: relative;
+    top: -20px;
+  }
   .card-container {
     grid-area: a;
     width: 100%;
-    height: 90%;
+    height: 97.5%;
     background-color: hsl(0, 0%, 90%);
     margin: 2%;
     padding: 2%;
     border-radius: 2%;
+    position: relative;
+    top: -50px;
+    left: 0px;
   }
-   .card {
+  .card-container .cards .card {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 5%;
-    width: 200px;
+    width: 270px;
    }
 
-   .card img {
-     width: 200px;
+   .card-container .cards .card img {
+     width: 270px;
+     height: 100px;
      border-radius: 5%;
    }
  
@@ -666,8 +955,8 @@ footer {
    }
 
    .card-2 {
-     width: 90%;
-     height: 95%;
+     width: 100%;
+     height: 100%;
    }
   .card-content {
   display: flex;
@@ -685,6 +974,66 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  aside .pictures .picture:nth-child(1)  {
+    width: 270px;
+    height: 400px;
+    padding: 0;
+  }
+  aside .pictures .picture:nth-child(1) img  {
+    width: 270px;
+    height: 400px;
+    padding: 0;
+  }
+
+  aside .pictures .picture:nth-child(3)  {
+    width: 270px;
+    height: 380px;
+  }
+
+  aside .pictures .picture:nth-child(3)  img {
+    width: 270px;
+    height: 380px;
+  }
+
+  aside .pictures .picture:nth-child(2) .pic2 {
+    width: 270px;
+    height: 130px;
+  }
+
+  aside .pictures .picture:nth-child(4) .pic1 {
+    width: 270px;
+    height: 130px;
+  }
+
+  aside .pictures .picture:nth-child(2) .pic2 img {
+    width: 270px;
+    height: 100px;
+  }
+
+  aside .pictures .picture:nth-child(4) .pic1 img {
+    width: 270px;
+    height: 100px;
+  }
+
+  aside .pictures .picture .pic {
+    width: 270px;
+    height: 170px
+  }
+
+  aside .pictures .picture .pic img {
+    width: 270px;
+    height: 150px
+  }
+
+  aside {
+    position: relative;
+    top: -50px;
+  }
+
+  aside pic img {
+    width: 230px;
+  }
   
   .pic {
     border-radius: 25px;
@@ -696,6 +1045,10 @@ footer {
   }
   footer {
     width: 100%;
+    height: 100%;
     padding-right: 30px;
+    position: relative;
+    top: -50px;
+    left: -50px;
   }
 }
