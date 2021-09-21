@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 html {
-  scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
-
-body {
+ body {
+    max-width: 100%;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
-
-   .logo{
-   padding-left: 25px;
+  b {
+    font-family: 'Raleway', sans-serif;
+  }
+  .logo{
+   position: relative;
+   left: 25px;
   }
   
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 5%;
     float: right;
   }
   
@@ -52,6 +58,11 @@ body {
     clear: both;
     padding-left: 25px;
   }
+  header b .text {
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+  }
 
   .container {
     display: grid;
@@ -60,7 +71,7 @@ body {
     ;
   }
   
-  container .card-container .cards .card a {
+  .container .card-container .cards .card a {
     color: black;
   }
   
@@ -111,19 +122,26 @@ body {
   .search-box i {
     color: black;
   }
+  .text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+  }
 
   ::-webkit-input-placeholder {
-    font-weight: bold;
+    color: black;
+    font-weight: 900;
     position: relative;
     left: 10px;
 }
 :-moz-placeholder {
-    font-weight: bold;
+    color: black;
+    font-weight: 900;
     position: relative;
     left: 10px;
 }
 :-ms-input-placeholder {
-    font-weight: bold;
+    color: black;
+    font-weight: 900;
     position: relative;
     left: 10px;
 }
@@ -131,6 +149,9 @@ body {
   .filters {
     padding-right: 20px;
     display: inline;
+    font-weight: 900;
+    text-shadow: .5px .5px #000;
+    font-size: 1.2rem;
   }
 
   .pills .pill {
@@ -148,23 +169,23 @@ body {
 
   .pill:nth-child(1) {
     width: 150px;
-    height: 30px;
+    height: 40px;
   }
 
   .pill:nth-child(2) {
     width: 150px;
-    height: 30px;
+    height: 60px;
     margin-left: -10px;
   }
 
   .pill:nth-child(3) {
     width: 150px;
-    height: 30px;
+    height: 60px;
   }
 
   .pill:nth-child(4) {
     width: 150px;
-    height: 30px;
+    height: 60px;
   }
 
   .pill i {
@@ -249,6 +270,16 @@ header .info {
   padding: 2%;
   border-radius: 2%;
  }
+ .content1 {
+  text-shadow: .5px .5px #000;
+  font-size: 1.2rem;
+  font-weight: 900;
+ }
+ .show {
+  text-shadow: .5px .5px #000;
+  font-size: 1.2rem;
+  font-weight: 900;
+ }
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -268,11 +299,11 @@ header .info {
   .card a:hover {
     transform: scale(1.1);
   }
-
-  .card img {
-   border-radius: 5%;
+  .title {
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-shadow: .5px .5px #000;
   }
-
   .card .card-content {
     line-height: 10px;
     display: inline;
@@ -285,7 +316,10 @@ header .info {
 .checked {
   color:  #0065FC;
 }
-
+#Activities {
+  position: relative;
+  left: -30px;
+}
 .side-container {
   grid-area: b;
   width: 100%;
@@ -297,6 +331,11 @@ header .info {
   position: relative;
   right: 100px;
   top: 12px;
+}
+.pop {
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-shadow: .5px .5px #000;
 }
 
 pre {
@@ -315,19 +354,22 @@ pre {
   background-color: white;
   border-radius: 5%;
 }
-
-.side-container .cards-2 .card-2 img {
-  border-radius: 5%;
-  height: 135px;
-}
 .card-content2 {
   width: 100%;
 }
-
+.fa-chart-line{
+  position: relative;
+  top: -40px;
+}
 .clear-fix {
   clear: both;
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
  aside {
   padding-left: 25px; 
   padding-top: 50px;
@@ -344,22 +386,6 @@ pre {
   flex-direction: column;
   justify-content: space-between;
 }
-
-.pictures .picture .pic img {
-  width: 270px;
-  height: 150px
-}
-
-.pic {
-  border-radius: 25px;
-  border: 1px solid  #F2F2F2;;
-}
-.pic img {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  width: 300px;
-}
-
 aside a {
   color: black;
 }
@@ -370,6 +396,21 @@ footer {
   margin: 2%;
   padding: 5%;
 }
+.footer-add {
+  font-weight: normal;
+}
+.footer-title {
+  font-size: 1.2rem;
+  text-shadow: .5px .5px #000;
+}
+.aside-text {
+  font-size: 1.05rem;
+  text-shadow: .5px .5px #000;
+}
+.act-title {
+  font-size: 1.2rem;
+  text-shadow: .5px .5px #000;
+}
 
 .lists {
   display: grid;
@@ -378,6 +419,20 @@ footer {
 }
 
 @media only screen and (min-width : 320px){
+    body {
+        font-family: 'Raleway', sans-serif;
+        box-sizing: border-box;
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+        scrollbar-width: none;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+      }
+    header {
+      overflow-x: hidden !important;
+      max-width: 100% !important;
+      margin: 0 auto;
+    }
   nav .nav-right ul li .sign{
     text-combine-upright: all;
   }
@@ -408,6 +463,11 @@ footer {
   .search-box {
     position: relative;
     left: 0px;
+  }
+  header .text {
+    font-weight:900;
+    font-size: 1.3rem;
+    text-shadow: .5px .5px #000;
   }
   .filters {
     display: block;
@@ -467,41 +527,255 @@ footer {
     'a a';
     gap: 20px;
   }
+  .container .card-container .cards a .card .auber {
+    background-image: url('/src/img/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel {
+    background-image: url('/src/img/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .les-mouet {
+    background-image: url('/src/img/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel-de {
+    background-image: url('/src/img/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .auber-le {
+    background-image: url('/src/img/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel-chez {
+    background-image: url('/src/img/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+   .morning {
+    background-image: url('/src/img/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+     }
+  .au-coeur {
+    background-image: url('/src/img/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .toul-bleu {
+    background-image: url('/src/img/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  aside .pictures .picture .old-port {
+    background-image: url('/src/img/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+   .pomegues {
+    background-image: url('/src/img/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .frioul {
+    background-image: url('/src/img/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .calanques  {
+    background-image: url('/src/img/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .notre-dame  {
+    background-image: url('/src/img/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .longchamp {
+    background-image: url('/src/img/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 24vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+   }
+   aside {
+    position: relative;
+    left: 40px;
+  }
+  
+   .content1 {
+     position: relative;
+     left: 10px;
+   }
+   .content2 {
+    position: relative;
+    left: 10px;
+  }
+  .stars {
+    position: relative;
+    left: 10px;
+  }
   .card-container {
-    width: 80%;
+    width: 100%;;
     grid-area: a;
     position: relative;
-    left: -20px;
     top: 20px;
+    left: -35px;
+    margin: 0 auto;
     background-color: transparent;
     padding-top: 30px;
   }
-  .card-container .cards .card {
-    width: 240px;
+  .cards {
+    display: flex;
+    gap: 15px;
   }
-  .card-container .cards .card img {
-    width: 240px;
+  .card-container .cards .card {
+    width: 95%;
+    height: 34vh;
+    box-shadow: 1px 1px 2px 3px #888888;
+  }
+  .show {
+    position: relative;
+    left: 30px;
   }
 
   .side-container {
-    width: 80%;
+    width: 100%;
     height: 100%;
     grid-area: b;
     position: relative;
     left: 0px;
     }
+    .card-content2 {
+      width: 90%;
+      line-height: 90%;
+      font-size: 100%;
+    }
+    .side-add {
+      font-weight: normal;
+    }
+    .side-add1 {
+      font-size: 1rem;
+    }
   .side-container .fa-chart-line{
       float: right;
+      position: relative;
+      left: -30px;
+      top: 3px;
     }
    .cards {
      display: flex;
      flex-direction: column;
    }
-
-   .side-container .cards-2 .card-2 img {
-     height: 215px;
-   }
-   .pictures {
+   
+   .card-2 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5%;
+    height: 34vh;
+    width: 88%;
+    margin: 0 auto;
+    border-radius: 25px;
+  }
+  .pictures {
      display: flex;
      flex-direction: column;
      position: relative;
@@ -515,19 +789,59 @@ footer {
 
   aside {
     position: relative;
-    left: 10px;
+    top: -20px;
+    width: 100%;
+    left: 20px;
   } 
+  .pictures {
+    width: 100%;
+  }
+  aside .pictures .picture{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+  }
   aside .pictures .pic {
-    width: 270px;
+    width: 90vw;
+    height: 34vh;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px #888888;
   }
-
-
-  aside .pictures .pic img {
-    width: 270px;
-    height: 130px;
+  .act-title {
+    position: relative;
+    top: 20px;
   }
-  
-  .card {
+  .oldport-text {
+    position: relative;
+    left: 20px; 
+    top: -10px;
+  }
+  .pom-text {
+    position: relative;
+    left: 20px; 
+    top: 15px;
+  }
+  .fri-text {
+    position: relative;
+    left: 20px; 
+    top: 15px;
+  }
+  .cal-text {
+    position: relative;
+    left: 20px; 
+    top: -10px;
+  }
+  .not-text {
+    position: relative;
+    left: 20px; 
+    top: 15px;
+  }
+  .lon-text {
+    position: relative;
+    left: 20px; 
+    top: 15px;
+  }
+   .card {
     position: relative;
     left: 30px;
     width: 300px;
@@ -545,11 +859,6 @@ footer {
     left: 40px;
   }
 
-  .card-2{
-    margin: 0 auto;
-    width: 80%;
-  }
-
   .card-2 img {
     position: relative;
     top: 5px;
@@ -560,11 +869,18 @@ footer {
     position: relative;
     width: 100%;
     left: -10px;
+    top: 30px;
   }
 }
 
 
 @media only screen and (min-width : 411px){
+  body {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
   nav .nav-right ul li a:nth-of-type(1) {
     border-bottom: 3px solid  hsl(216, 100%, 49%);
     color:hsl(216, 100%, 49%);
@@ -637,24 +953,20 @@ footer {
     gap: 20px;
   }
   .card-container {
-    width: 100%;
     grid-area: a;
     position: relative;
-    left: -10px;
+    left: -30px;
     top: 20px;
     background-color: transparent;
     padding-top: 30px;
   }
-  .card-container .cards .card {
-    width: 300px;
-  }
-
+ 
   .card-container .cards .card img {
-    width: 300px;
+    width: 100%
   }
 
   .side-container {
-    width: 80%;
+    width: 85%;
     height: 100%;
     grid-area: b;
     position: relative;
@@ -673,10 +985,12 @@ footer {
      position: relative;
      left: -38px;
      }
-
-   .pic {
-     padding: 15px;
-  }
+     aside .pictures .pic {
+      width: 90vw;
+      height: 34vh;
+      border-radius: 25px;
+      box-shadow: 5px 5px 8px #888888;
+    }
   .lists {
     display: flex;
     flex-direction: column;
@@ -686,16 +1000,6 @@ footer {
     position: relative;
     left: 50px;
   } 
-  aside .pictures .pic {
-    width: 270px;
-  }
-
-
-  aside .pictures .pic img {
-    width: 270px;
-    height: 130px;
-  }
-  
   .card {
     position: relative;
     left: 30px;
@@ -712,25 +1016,36 @@ footer {
     position: relative;
     left: 40px;
   }
-
   .card-2{
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
   }
-
-  .card-2 img {
+  .card-content2 {
+    width: 100%;
+    line-height: 110%;
+    font-size: 110%;
+  }
+  .pictures {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    top: 5px;
-    border-top-left-radius: 2%;
-    border-bottom-left-radius: 2%;
-  }
+    left: -72px;
+    }
+
   footer {
     position: relative;
     width: 100%;
     left: -15px;
+    top: 30px;
   }
 }
-
+@media only screen and (min-width: 540px){
+  nav .nav-right ul li:nth-of-type(3){
+    position: relative;
+    top: 0px;
+    left: -70px;
+  }
+}
 @media only screen and (min-width: 768px){
    nav .nav-right ul li a:nth-child(1) {
     border: none;
@@ -782,15 +1097,225 @@ footer {
   .card-container .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 160px 160px 160px;
+    grid-template-rows: 38vw 38vw 38vw;
     gap: 10px;
+  }
+  .card-content2 {
+    width: 100%;
+    line-height: 130%;
+    font-size: 200%;
   }
 
   .card-container {
-    width: 80%;
+    width: 100%;
+    height: 100%;
     position: relative;
-    top: 10px;
+    top: 40px;
     left: -30px;
+    background-color: #F2F2F2;
+   }
+   .card-container .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-gap: 3%;
+    padding: 5%;
+  }
+  .card-container .cards .card {
+    width: 100%;
+    height: 100%;;
+  }
+  .card-container .show {
+    position: relative;
+    top: -2vh;
+  }
+   .container .card-container .cards a .card .auber {
+    background-image: url('/src/img/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel {
+    background-image: url('/src/img/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .les-mouet {
+    background-image: url('/src/img/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel-de {
+    background-image: url('/src/img/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .auber-le {
+    background-image: url('/src/img/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel-chez {
+    background-image: url('/src/img/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+   .morning {
+    background-image: url('/src/img/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+     }
+  .au-coeur {
+    background-image: url('/src/img/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .toul-bleu {
+    background-image: url('/src/img/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  aside .pictures .picture .old-port {
+    background-image: url('/src/img/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    width: 20vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+   .pomegues {
+    background-image: url('/src/img/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 14vh;
+    width: 20vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .frioul {
+    background-image: url('/src/img/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 11vh;
+    width: 20vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .calanques  {
+    background-image: url('/src/img/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    width: 20vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .notre-dame  {
+    background-image: url('/src/img/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 9vh;
+    width: 20vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .longchamp {
+    background-image: url('/src/img/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 14vh;
+    width: 20vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+   }
+   .pom-text {
+     position: relative;
+     left: 10px;
+   }
+   .fri-text {
+     position: relative;
+     left: 10px;
+   }
+   .cal-text {
+     position: relative;
+     left: 10px;
+   }
+   .not-text {
+     position: relative;
+     left: 10px;
+   }
+   .lon-text {
+    position: relative;
+    left: 10px;
    }
 
    .show {
@@ -802,54 +1327,331 @@ footer {
     position: relative;
     top: -10px;
   }
+  .side-add1 {
+    text-shadow: .5px .5px #000;
+    font-size: 2rem;
+    font-weight: 900;
+   }
 
   .side-container .fa-chart-line{
     float: right;
+    font-size: 2rem;
+    position: relative;
+    top: -5px;
+  }
+  .side-container .cards-2 .card-2 .card-content2 {
+    width: 100%;
+    line-height: 120%;
+    font-size: 150%;
+    position: relative;
+    top: 10px;
+  }
+  .cards-2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
   }
   
+  .card-2 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5%;
+  }
   aside {
     position: relative;
-    left: 30px;
+    left: 50px;
+    top: 30px;
   }
-  aside .pictures .picture .pic  {
-    width: 100px;
-    height: 130px;
+  .act-title {
+    position: relative;
+    top: 4vh;
+    left: -4vw;
   }
+  aside .pictures .picture:nth-child(2) .pic1  {
+    width: 20vw;
+    height: 18vh; 
+   }
+   aside .pictures .picture:nth-child(2) .pic2  {
+    width: 20vw;
+    height: 15vh; 
+   }
+   aside .pictures .picture:nth-child(4) .pic1  {
+    width: 20vw;
+    height: 15vh; 
+   }
+   aside .pictures .picture:nth-child(4) .pic2  {
+    width: 20vw;
+    height: 18vh; 
+   }
   aside .pictures .picture:nth-child(1)  {
-    width: 100px;
-    height: 400px;
+    width: 20vw;
+    height: 35vh;
   }
   aside .pictures .picture:nth-child(3) {
-    width: 100px;
-    height: 400px;
-  }
-  aside .pictures .picture .pic img {
-    width: 100px;
-    height: 100px;
-  }
-  aside .pictures .picture:nth-child(1) img {
-    width: 100px;
-    height: 400px;
-  }
-  aside .pictures .picture:nth-child(3) img {
-    width: 100px;
-    height: 400px;
+    width: 20vw;
+    height: 35vw;
   }
   
   .pictures {
     display: grid;
-    grid-template-columns: 150px 150px 150px 150px;
-    gap: 27.1px;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    gap: 0.1vw;
+    position: relative;
+    top: 20px;
   }
+  aside .pictures .picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside-text {
+  font-size: 1rem;
+}
   
   footer {
     width: 100%;
     position:relative;
-    top: 20px;
+    top: 60px;
   }
 }
 
 @media only screen and (min-width : 1024px){
+.container .card-container .cards a .card .auber {
+  background-image: url('/src/img/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 100%;;
+  border-top-left-radius: 25px;
+  border-top-right-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.container .card-container .cards a .card .hotel {
+  background-image: url('/src/img/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.container .card-container .cards a .card .les-mouet {
+  background-image: url('/src/img/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.container .card-container .cards a .card .hotel-de {
+  background-image: url('/src/img/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.container .card-container .cards a .card .auber-le {
+  background-image: url('/src/img/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.container .card-container .cards a .card .hotel-chez {
+  background-image: url('/src/img/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+ .morning {
+  background-image: url('/src/img/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 70%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+   }
+.au-coeur {
+  background-image: url('/src/img/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 70%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.toul-bleu {
+  background-image: url('/src/img/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 70%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius:  25px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+aside .pictures .picture .old-port {
+  background-image: url('/src/img/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  width: 20vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+ .pomegues {
+  background-image: url('/src/img/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 14vh;
+  width: 20vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.frioul {
+  background-image: url('/src/img/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 11vh;
+  width: 20vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.calanques  {
+  background-image: url('/src/img/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  width: 20vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.notre-dame  {
+  background-image: url('/src/img/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 9vh;
+  width: 20vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.longchamp {
+  background-image: url('/src/img/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 14vh;
+  width: 20vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+ }
+ .container1 img {
+   position: relative;
+   top: 30px;
+ }
+ nav {
+  font-size: 1.5rem;
+ }
+ header {
+   font-size: 1.5rem;
+ }
+ .side-container .cards-2 .card-2 .card-content2 {
+  width: 100%;
+  line-height: 130%;
+  font-size: 200%;
+}
+.side-container .cards-2 .card-2 .side-add1 {
+  font-size: 100%;
+}
+.fa-chart-line {
+  font-size: 2rem;
+}
+.card-content {
+  width: 100%;
+  line-height: 150%;
+  font-size: 170%;
+}
+.content1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-shadow: .5px .5px #000;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: .5px .5px #000;
+}
+.show {
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: .5px .5px #000;
+}
+.side-add1{
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: .5px .5px #000;
+}
+.container .card-container{
+  position: relative;
+  top: 100px;
+}
+.pictures{
+  position: relative;
+  top: 40px;
+}
+.pop{
+  font-size: 2rem;
+}
+aside {
+  position: relative;
+  top: 100px;
+}
+footer {
+  position: relative;
+  top: 200px;
+}
+}
+ @media only screen and (min-width : 1366px){
    nav .nav-right ul li a {
      border-bottom: none;
    }
@@ -871,6 +1673,8 @@ footer {
 
   .filters {
     display: inline;
+    position: relative;
+    top: -3vh;
   }
 
   .pills {
@@ -904,21 +1708,34 @@ footer {
   
   .side-container {
     grid-area: b;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 92%;
     background-color: hsl(0, 0%, 90%);
     margin: 2%;
     border-radius: 2%;
     position: relative;
-    left: 70px;
-    top: -42px;
+    left: -10px;
+    top: -33px;
     padding-right: 0px;
   }
-
-  .side-container .cards-2 .card-2 img {
-    border-radius: 5%;
-    height: 150px;
+  .side-container .cards-2 .card-2 .card-content2 {
+    width: 100%;
+    line-height: 70%;
+    font-size: 90%;
   }
+  .side-container .cards-2 .card-2 .side-add1 {
+    font-size: 20px;
+  }
+.pop {
+  font-size: 1.5rem;
+}
+  .side-container .cards-2 {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 5%;
+  }
+
   .lists {
     display: grid;
     grid-template-columns: 300px 300px 300px;
@@ -928,17 +1745,38 @@ footer {
     position: relative;
     top: -20px;
   }
-  .card-container {
+  .container .card-container {
     grid-area: a;
-    width: 100%;
-    height: 96.8%;
+    width: 97%;
+    height: 95vh;
     background-color: hsl(0, 0%, 90%);
     margin: 2%;
     padding: 2%;
     border-radius: 2%;
     position: relative;
-    top: -50px;
-    left: 0px;
+    top: -40px;
+    left: -40px;
+  }
+  .title {
+    font-size: 1.5rem;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  .show {
+    font-size: 1.5rem;
+    position: relative;
+  }
+  .side-container .cards-2 .card-2 .card-content2 .side-add1{
+     font-size: 1rem;
+   }
+  .cards {
+    position: relative;
+    left: -50px;
+    top: 0vh;
+  }
+  .card-container .cards .show {
+    top: 5vh;;
   }
   .card-container .cards .card {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -946,12 +1784,230 @@ footer {
     border-radius: 5%;
     width: 270px;
    }
-
-   .card-container .cards .card img {
-     width: 270px;
-     height: 100px;
-     border-radius: 5%;
+   .container .card-container .cards a .card .auber {
+    background-image: url('/src/img/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel {
+    background-image: url('/src/img/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .les-mouet {
+    background-image: url('/src/img/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel-de {
+    background-image: url('/src/img/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .auber-le {
+    background-image: url('/src/img/images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .container .card-container .cards a .card .hotel-chez {
+    background-image: url('/src/img/images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+   .morning {
+    background-image: url('/src/img/images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+     }
+  .au-coeur {
+    background-image: url('/src/img/images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .toul-bleu {
+    background-image: url('/src/img/images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  aside .pictures .picture .old-port {
+    background-image: url('/src/img/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    width: 17vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+   .pomegues {
+    background-image: url('/src/img/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 23vh;
+    width: 17vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .frioul {
+    background-image: url('/src/img/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 18vh;
+    width: 17vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .calanques  {
+    background-image: url('/src/img/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    width: 17vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .notre-dame  {
+    background-image: url('/src/img/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 18vh;
+    width: 17vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .longchamp {
+    background-image: url('/src/img/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 23vh;
+    width: 17vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
    }
+   .side-container .cards-2 .card-2 .card-content2 {
+    width: 100%;
+    line-height: 100%;
+    font-size: 100%;
+    position: relative;
+    top: 5px;
+  }
+  .content2 {
+    font-size: 80%;
+  }
+   aside .pictures .picture:nth-child(2) .pic1  {
+    width: 17vw;
+    height: 29vh; 
+   }
+   aside .pictures .picture:nth-child(2) .pic2  {
+    width: 17vw;
+    height: 24vh; 
+   }
+   aside .pictures .picture:nth-child(4) .pic1  {
+    width: 17vw;
+    height: 24vh; 
+   }
+   aside .pictures .picture:nth-child(4) .pic2  {
+    width: 17vw;
+    height: 29vh; 
+   }
+  aside .pictures .picture:nth-child(1)  {
+    width: 17vw;
+    height: 60vh;
+  }
+  aside .pictures .picture:nth-child(3) {
+    width: 17vw;
+    height: 60vw;
+  }
+  
+   .pom-text {
+     position: relative;
+     left: 10px;
+   }
+   .fri-text {
+     position: relative;
+     left: 10px;
+   }
+   .cal-text {
+     position: relative;
+     left: 10px;
+   }
+   .not-text {
+     position: relative;
+     left: 10px;
+   }
+   .lon-text {
+    position: relative;
+    left: 10px;
+   }
+
  
    .card a:hover {
      transform: scale(1.1);
@@ -964,12 +2020,20 @@ footer {
 
    .card-2 {
      width: 100%;
-     height: 100%;
+     height: 26vh;
    }
-  .card-content {
+  .container .card-container .cards .card .card-content {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  line-height: 100%;
+  font-size: 100%;
+  position: relative;
+  top: -10px;
 }
+ .content1 {
+   font-size: 1rem;
+ }
  
    .pictures {
     display: grid;
@@ -982,81 +2046,30 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
-
-  aside .pictures .picture:nth-child(1)  {
-    width: 270px;
-    height: 400px;
-    padding: 0;
-  }
-  aside .pictures .picture:nth-child(1) img  {
-    width: 270px;
-    height: 400px;
-    padding: 0;
-  }
-
-  aside .pictures .picture:nth-child(3)  {
-    width: 270px;
-    height: 380px;
-  }
-
-  aside .pictures .picture:nth-child(3)  img {
-    width: 270px;
-    height: 380px;
-  }
-
-  aside .pictures .picture:nth-child(2) .pic2 {
-    width: 270px;
-    height: 130px;
-  }
-
-  aside .pictures .picture:nth-child(4) .pic1 {
-    width: 270px;
-    height: 130px;
-  }
-
-  aside .pictures .picture:nth-child(2) .pic2 img {
-    width: 270px;
-    height: 100px;
-  }
-
-  aside .pictures .picture:nth-child(4) .pic1 img {
-    width: 270px;
-    height: 100px;
-  }
-
-  aside .pictures .picture .pic {
-    width: 270px;
-    height: 170px
-  }
-
-  aside .pictures .picture .pic img {
-    width: 270px;
-    height: 150px
-  }
-
   aside {
     position: relative;
-    top: -50px;
+    top: -15vh;
+    left: 5vw;
+  }
+  .act-title {
+    position: relative;
+    left: -2.5vw;
+    font-size: 1.5rem;
   }
 
-  aside pic img {
-    width: 230px;
-  }
   
   .pic {
     border-radius: 25px;
-    border: 1px solid  #F2F2F2;;
+    border: 1px solid  #F2F2F2;
   }
-  .pic img {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-  }
-  footer {
+
+  html body footer {
     width: 100%;
     height: 100%;
     padding-right: 30px;
     position: relative;
     top: -50px;
     left: -50px;
+    font-family: 'Raleway', sans-serif;
   }
 }
