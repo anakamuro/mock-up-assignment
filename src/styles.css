@@ -2,20 +2,21 @@
 
 html {
   overflow-x: hidden !important;
-  height: 100%;
-  overflow-y: hidden !important;
+  scroll-behavior: smooth;
 }
  body {
     max-width: 100%;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    height: 100%;
     overflow-x: hidden !important;
+    overflow-y: hidden !important;
     max-width: 100% !important;
     scrollbar-width: none;
     -ms-overflow-style: none;
     height: 100%;
     overflow: scroll;
-    overscroll-behavior-y: scroll;
+    scroll-behavior: smooth;
   }
   b {
     font-family: 'Raleway', sans-serif;
