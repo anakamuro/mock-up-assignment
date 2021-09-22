@@ -276,6 +276,11 @@ header .info {
   padding: 2%;
   border-radius: 2%;
  }
+ .number {
+   font-weight: 900;
+   font-size: 1.02rem; 
+   text-shadow: .5px .5px #000;
+ }
  .content1 {
   text-shadow: .5px .5px #000;
   font-size: 1.2rem;
