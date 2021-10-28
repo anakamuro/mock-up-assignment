@@ -14,7 +14,6 @@ html {
     max-width: 100% !important;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    height: 100%;
     overflow: scroll;
     scroll-behavior: smooth;
   }
@@ -24,6 +23,8 @@ html {
   .logo{
    position: relative;
    left: 25px;
+   top: 20px;
+   padding-bottom: 20px;
   }
   
   nav {
@@ -35,7 +36,8 @@ html {
   
   .nav-right {
     display: flex;
-    align-items: center;
+    position: relative;
+    left: -18px;
   }
   
   .nav-right ul li {
@@ -198,7 +200,7 @@ html {
     background-color: white;
     border-radius: 50%;
     border: 1px solid gray;
-    padding: 5px;
+    padding: 9px;
     background-color: hsl(0, 0%, 90%);
     color: blue;
   }
@@ -247,16 +249,29 @@ html {
 
   .fa-circle {
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 15px;
     line-height: 30px;
     text-align: center;
-    background-color:   #F2F2F2;
+    background-color: white;
     color: #0065FC;
     position: relative;
     display: inline;
+    border: 2px solid #F2F2F2;
   }
-
+  .fa-info {
+    position: relative;
+    top: -5px;
+  }
+  .fa-circle {
+    position: relative;
+    top: 0px;;
+  }
+  .ava {
+    position: relative;
+    left: 35px;
+    top: -10px;
+  }
   .circle-icon {
     background: #ffc0c0;
     padding:30px;
@@ -345,8 +360,10 @@ header .info {
 }
 .pop {
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-shadow: .5px .5px #000;
+  position: relative;
+  left: 15px;
 }
 
 pre {
@@ -357,6 +374,8 @@ pre {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
+  position: relative;
+  left: -5px;
 }
 
 .card-2 {
@@ -439,10 +458,24 @@ footer {
         overflow-y: scroll;
         -ms-overflow-style: none;
       }
+      .number {
+        font-weight: 900;
+        font-size: 0.8rem; 
+        text-shadow: .5px .5px #000;
+      }
+      .stars2 {
+        position: relative;
+        left: 10px;
+        top: 10px;
+      }
+      .down {
+        position: relative;
+        top: 5px;
+        font-size: 0.7rem;
+      }
     header {
-      overflow-x: hidden !important;
-      max-width: 100% !important;
-      margin: 0 auto;
+      position: relative;
+      left: -15px;
     }
   nav .nav-right ul li .sign{
     text-combine-upright: all;
@@ -463,7 +496,7 @@ footer {
   }
   nav .nav-right ul li:nth-of-type(3){
     position: relative;
-    top: -70px;
+    top: -60px;
     left: -70px;
   }
 
@@ -477,7 +510,7 @@ footer {
   }
   header .text {
     font-weight:900;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-shadow: .5px .5px #000;
   }
   .filters {
@@ -485,43 +518,46 @@ footer {
   }
   .pills {
     position: relative;
-    top: 10px;
-    left: -20px;
+    top: 20px;
+    left: 0px;
   }
   button.pill:nth-child(1){
     width: 120px;
-    height: 30px;
+    height: 37px;
     display: inline;
+    font-size: 0.8rem;
     position: relative;
     top: -25px;
   }
   button.pill:nth-child(2){
-    width: 150px;
-    height: 30px;
+    width: 140px;
+    height: 37px;
     position: relative;
     top: -25px;
-    left: -5px;
+    left: 5px;
   }
   button.pill:nth-child(3) {
-    width: 250px;
-    height: 30px;
+    width: 160px;
+    height: 37px;
     position: relative;
-    top: -25px;
-    left: -8px;
+    top: -15px;
+    left: 0px;
     }
 
   button.pill:nth-child(4) {
-    width: 240px;
-    height: 30px;
+    width: 180px;
+    height: 37px;
     position: relative;
-    top: -25px;
+    top: -5px;
     }
 
   .info {
     padding: 3%;
     margin: 0 auto;
    position: relative;
-   left: -20px;
+   left: 0px;
+   top: 30px;
+   padding-bottom: 40px;
   }
 
   .infotext{
@@ -537,7 +573,10 @@ footer {
     'b b'
     'a a';
     gap: 20px;
+    position: relative;
+    padding-bottom: 15px;
   }
+
   .container .card-container .cards a .card .auber {
     background-image: url('../src/img/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
     background-repeat: no-repeat;
@@ -650,7 +689,7 @@ footer {
     background-image: url('../src/img/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     height: 24vh;
     width: 100%;
     border-top-left-radius: 25px;
@@ -660,7 +699,7 @@ footer {
     background-image: url('../src/img/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top -120px right 0px;
     height: 24vh;
     width: 100%;
     border-top-left-radius: 25px;
@@ -670,7 +709,7 @@ footer {
     background-image: url('../src/img/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     height: 24vh;
     width: 100%;
     border-top-left-radius: 25px;
@@ -680,7 +719,7 @@ footer {
     background-image: url('../src/img/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     height: 24vh;
     width: 100%;
     border-top-left-radius: 25px;
@@ -690,7 +729,7 @@ footer {
     background-image: url('../src/img/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     height: 24vh;
     width: 100%;
     border-top-left-radius: 25px;
@@ -700,11 +739,20 @@ footer {
     background-image: url('../src/img/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     height: 24vh;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+   }
+   .old-text{
+     position: relative;
+     top: -10px;
+   }
+   .cal-text {
+     position: relative;
+     top: -10px;
+     left: 10px;
    }
    aside {
     position: relative;
@@ -728,7 +776,7 @@ footer {
     grid-area: a;
     position: relative;
     top: 20px;
-    left: -35px;
+    left: -30px;
     margin: 0 auto;
     background-color: transparent;
     padding-top: 30px;
@@ -745,6 +793,7 @@ footer {
   .show {
     position: relative;
     left: 30px;
+    top: 15px;
   }
 
   .side-container {
@@ -752,7 +801,7 @@ footer {
     height: 100%;
     grid-area: b;
     position: relative;
-    left: 0px;
+    left: -10px;
     }
     .card-content2 {
       width: 90%;
@@ -761,9 +810,18 @@ footer {
     }
     .side-add {
       font-weight: normal;
+      font-size: 0.7rem;
+      position: relative;
+      top: 10px;
+      left: 10px;
     }
     .side-add1 {
-      font-size: 1rem;
+      font-size: 0.7rem;
+      font-weight: 900;
+      text-shadow: 0.5px 0.5px #000;
+      position: relative;
+      top: 10px;
+      left: 10px;
     }
   .side-container .fa-chart-line{
       float: right;
@@ -781,7 +839,7 @@ footer {
     flex-direction: row;
     background-color: white;
     border-radius: 5%;
-    height: 34vh;
+    height: 24vh;
     width: 88%;
     margin: 0 auto;
     border-radius: 25px;
@@ -821,6 +879,7 @@ footer {
   .act-title {
     position: relative;
     top: 20px;
+    left: -8px;
   }
   .oldport-text {
     position: relative;
@@ -837,11 +896,7 @@ footer {
     left: 20px; 
     top: 15px;
   }
-  .cal-text {
-    position: relative;
-    left: 20px; 
-    top: -10px;
-  }
+  
   .not-text {
     position: relative;
     left: 20px; 
@@ -879,6 +934,7 @@ footer {
   footer {
     position: relative;
     width: 100%;
+    height: 470px;
     left: -10px;
     top: 30px;
   }
@@ -896,7 +952,7 @@ footer {
     border-bottom: 3px solid  hsl(216, 100%, 49%);
     color:hsl(216, 100%, 49%);
     position: relative;
-    left: -60px;
+    left: -30px;
   }
   nav .nav-right ul li a:nth-of-type(2) {
     border-bottom: 3px solid #F2F2F2;
@@ -904,12 +960,46 @@ footer {
   }
   nav .nav-right ul li:nth-of-type(3){
     position: relative;
-    top: -70px;
-    left: -100px;
+    top: -65px;
+    left: -90px;
+    font-size: 1.3rem;
   }
+  .act-title {
+    position: relative;
+    top: 20px;
+    left: -35px;
+    font-size: 1.6rem;
+}
+.show {
+  position: relative;
+  left: 30px;
+  top: 15px;
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+}
+.aside-text {
+  font-size: 1.05rem;
+  text-shadow: 0.5px 0.5px #000;
+  position: relative;
+  top: 30px;
+}
+aside .pictures .picture .old-port {
+  background-image: url(../src/img/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 21vh;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.old-text {
+  position: relative;
+  top: -60px;
+}
   .search-box {
     position: relative;
-    left: 20px;
+    left: 0px;
   }
   .filters {
     display: block;
@@ -917,38 +1007,23 @@ footer {
   .pills {
     position: relative;
     top: 20px;
-    left: -20px;
-  }
-  button.pill:nth-child(1){
-    width: 150px;
-    height: 30px;
-    position: relative;
-    top: -30px;
-  }
-  button.pill:nth-child(2){
-    width: 150px;
-    height: 30px;
-    position: relative;
-    left: -5px;
-    top: -31px;
-  }
-  button.pill:nth-child(3) {
-    width: 250px;
-    height: 30px;
-    position: relative;
     left: 0px;
-    }
-
+    padding-bottom: 40px;
+  }
   button.pill:nth-child(4) {
-    width: 240px;
-    height: 30px;
-    }
-
+    width: 180px;
+    height: 37px;
+    position: relative;
+    top: 30px;
+    left: -167px;
+}
   .info {
     padding: 3%;
     margin: 0 auto;
    position: relative;
-   left: -20px;
+   left: 0px;
+   padding-bottom: 30px;
+   padding-top: 20px;
   }
 
   .infotext{
@@ -977,14 +1052,30 @@ footer {
   }
 
   .side-container {
-    width: 85%;
+    width: 100%;
     height: 100%;
     grid-area: b;
     position: relative;
-    left: 0px;
+    left: -8px;
     }
+    .side-add1 {
+      font-size: 1.07rem;
+      font-weight: 900;
+      text-shadow: 0.5px 0.5px #000;
+      position: relative;
+      top: 10px;
+      left: 10px;
+  }
+  .side-add {
+    font-weight: normal;
+    font-size: 1.1rem;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
   .side-container .fa-chart-line{
       float: right;
+      font-size: 1.5rem;
     }
    .cards {
      display: flex;
@@ -998,10 +1089,73 @@ footer {
      }
      aside .pictures .pic {
       width: 90vw;
-      height: 34vh;
+      height: 30vh;
       border-radius: 25px;
       box-shadow: 5px 5px 8px #888888;
     }
+    .pomegues {
+      background-image: url(../src/img/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top -200px right 0px;
+      height: 30vh;
+      width: 100%;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+  }
+  .calanques {
+    background-image: url(../src/img/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 30vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.notre-dame {
+  background-image: url(../src/img/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 30vh;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.longchamp {
+  background-image: url(../src/img/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 30vh;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.frioul {
+    background-image: url(../src/img/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 30vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+button.pill:nth-child(1) {
+  width: 120px;
+  height: 37px;
+  display: inline;
+  font-size: 0.8rem;
+  position: relative;
+  top: -25px;
+}
+.cal-text {
+  position: relative;
+  top: -15px;
+  left: 10px;
+}
   .lists {
     display: flex;
     flex-direction: column;
@@ -1019,7 +1173,24 @@ footer {
   .card-container .cards .card-content {
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
   }
+  .content1 {
+    position: relative;
+    left: 10px;
+    font-size: 1.5rem;
+}
+.content2 {
+  position: relative;
+  left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.number {
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-shadow: 0.5px 0.5px #000;
+}
   i .fa-eur{
     display: inline-block;
   }
@@ -1028,9 +1199,22 @@ footer {
     left: 40px;
   }
   .card-2{
-    margin: 0 auto;
-    width: 100%;
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      border-radius: 5%;
+      height: 20vh;
+      width: 88%;
+      margin: 0 auto;
+      border-radius: 25px;
   }
+  .pop {
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-shadow: 0.5px 0.5px #000;
+    position: relative;
+    left: 20px;
+}
   .card-content2 {
     width: 100%;
     line-height: 110%;
@@ -1050,12 +1234,135 @@ footer {
     top: 30px;
   }
 }
+
 @media only screen and (min-width: 540px){
   nav .nav-right ul li:nth-of-type(3){
     position: relative;
     top: 0px;
     left: -70px;
   }
+  .nav-right ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+    top: 80px;
+    left: -50px;
+    padding-bottom: 100px;
+}
+nav .nav-right ul li:nth-of-type(3) {
+  position: relative;
+  top: 0px;
+  left: -65px;
+}
+button.pill:nth-child(3) {
+  width: 240px;
+  height: 50px;
+  position: relative;
+  top: -10px;
+  left: 0px;
+}
+button.pill:nth-child(4) {
+  width: 260px;
+  height: 50px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+header .text {
+  font-weight: 900;
+  font-size: 2rem;
+  text-shadow: 0.5px 0.5px #000;
+}
+.down {
+  position: relative;
+  top: 5px;
+  font-size: 1.4rem;
+  padding-top: 30px;
+}
+.card-2 {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 5%;
+  height: 26vh;
+  width: 88%;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+.pop {
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-shadow: 0.5px 0.5px #000;
+  position: relative;
+  left: 35px;
+  top: 20px;
+}
+.side-container .fa-chart-line {
+  float: right;
+  font-size: 1.8rem;
+  position: relative;
+  top: 25px;
+  left: -55px;
+}
+.card-container {
+  grid-area: a;
+  position: relative;
+  left: -30px;
+  top: 20px;
+  background-color: transparent;
+  padding-top: 55px;
+}
+.title {
+  position: relative;
+  left: 40px;
+  font-size: 2rem;;
+  padding-bottom: 40px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+aside .pictures .picture .old-port {
+  background-image: url(../src/img/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 30vh;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+aside .pictures .pic {
+  width: 90vw;
+  height: 40vh;
+  border-radius: 25px;
+  box-shadow: 5px 5px 8px #888888;
+}
+.cards-2 {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+  left: -5px;
+  top: 30px;
+}
+button.pill:nth-child(1) {
+  width: 200px;
+  height: 50px;
+  display: inline;
+  font-size: 0.8rem;
+  position: relative;
+  top: -25px;
+}
+button.pill:nth-child(2) {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  top: -25px;
+  left: 5px;
+}
 }
 @media only screen and (min-width: 768px){
    nav .nav-right ul li a:nth-child(1) {
@@ -1659,7 +1966,7 @@ aside {
 }
 footer {
   position: relative;
-  top: 200px;
+  top: 0px;
 }
 }
  @media only screen and (min-width : 1366px){
@@ -1697,30 +2004,24 @@ footer {
    position: relative;
    top: -30px;
   }
-
-  header .info {
-    padding-top: 20px;
-  }
-    
-
   .card-container .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px 200px;
-    gap: 10px;
+    gap: 30px;
+    position: relative;
+    left: -30px;
   }
-  
   .container {
     display: grid;
     grid-template-areas: 
     'a b'
     ;
-  }
-  
+  } 
   .side-container {
     grid-area: b;
     width: 95%;
-    height: 92%;
+    height: 620px;
     background-color: hsl(0, 0%, 90%);
     margin: 2%;
     border-radius: 2%;
@@ -1739,27 +2040,46 @@ footer {
   }
 .pop {
   font-size: 1.5rem;
+  position: relative;
+  left: 25px;
+  top: 10px;
+}
+.side-container .fa-chart-line {
+  float: right;
+  font-size: 2rem;
+  position: relative;
+  top: 10px;
+  left: -45px;
 }
   .side-container .cards-2 {
     display: flex;
     flex-direction: column;
     width: 350px;
     gap: 5%;
+    position: relative;
+    left: 25px;
+    top: 20px;
   }
 
   .lists {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 400px 400px 400px;
     gap: 25px;
+  }
+  .filter {
+    position: relative;
+    top: 25px;
   }
   header .info {
     position: relative;
-    top: -20px;
+    top: 0px;
+    left: -30px;
+    padding-top: 20px;
   }
   .container .card-container {
     grid-area: a;
     width: 97%;
-    height: 95vh;
+    height: 605px;
     background-color: hsl(0, 0%, 90%);
     margin: 2%;
     padding: 2%;
@@ -1769,10 +2089,10 @@ footer {
     left: -40px;
   }
   .title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     position: relative;
     top: 20px;
-    left: 20px;
+    left: 40px;
   }
   .show {
     font-size: 1.5rem;
@@ -1787,20 +2107,22 @@ footer {
     top: 0vh;
   }
   .card-container .cards .show {
-    top: 5vh;;
+    position: relative;
+    top: 0px;
+    font-size: 1rem;
   }
   .card-container .cards .card {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 5%;
-    width: 270px;
+    width: 240px;
    }
    .container .card-container .cards a .card .auber {
     background-image: url('../src/img/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 20vh;
+    height: 130px;
     width: 100%;;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -1812,7 +2134,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 20vh;
+    height: 130px;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -1824,7 +2146,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 20vh;
+    height: 130px;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -1836,7 +2158,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 20vh;;
+    height: 130px;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -1848,7 +2170,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 20vh;
+    height: 130px;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -1860,7 +2182,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 20vh;
+    height: 130px;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -1872,7 +2194,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 150px;
     width: 70%;
     border-top-left-radius: 25px;
     border-bottom-left-radius:  25px;
@@ -1884,7 +2206,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 150px;
     width: 70%;
     border-top-left-radius: 25px;
     border-bottom-left-radius:  25px;
@@ -1896,7 +2218,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 150px;
     width: 70%;
     border-top-left-radius: 25px;
     border-bottom-left-radius:  25px;
@@ -1909,7 +2231,7 @@ footer {
     background-size: cover;
     background-position: center;
     height: 55vh;
-    width: 17vw;
+    width: 22vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1919,7 +2241,7 @@ footer {
     background-size: cover;
     background-position: center;
     height: 23vh;
-    width: 17vw;
+    width: 22vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1929,7 +2251,7 @@ footer {
     background-size: cover;
     background-position: center;
     height: 18vh;
-    width: 17vw;
+    width: 22vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1939,7 +2261,7 @@ footer {
     background-size: cover;
     background-position: center;
     height: 55vh;
-    width: 17vw;
+    width: 22vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1949,7 +2271,7 @@ footer {
     background-size: cover;
     background-position: center;
     height: 18vh;
-    width: 17vw;
+    width: 22vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1959,7 +2281,7 @@ footer {
     background-size: cover;
     background-position: center;
     height: 23vh;
-    width: 17vw;
+    width: 22vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
    }
@@ -1974,27 +2296,27 @@ footer {
     font-size: 80%;
   }
    aside .pictures .picture:nth-child(2) .pic1  {
-    width: 17vw;
+    width: 100%;
     height: 29vh; 
    }
    aside .pictures .picture:nth-child(2) .pic2  {
-    width: 17vw;
+    width: 100%;
     height: 24vh; 
    }
    aside .pictures .picture:nth-child(4) .pic1  {
-    width: 17vw;
+    width: 100%;
     height: 24vh; 
    }
    aside .pictures .picture:nth-child(4) .pic2  {
-    width: 17vw;
+    width: 100%;
     height: 29vh; 
    }
   aside .pictures .picture:nth-child(1)  {
-    width: 17vw;
+    width: 100%;
     height: 60vh;
   }
   aside .pictures .picture:nth-child(3) {
-    width: 17vw;
+    width: 100%;
     height: 60vw;
   }
   
@@ -2031,7 +2353,7 @@ footer {
 
    .card-2 {
      width: 100%;
-     height: 26vh;
+     height: 153px;
    }
   .container .card-container .cards .card .card-content {
   display: flex;
@@ -2049,7 +2371,9 @@ footer {
    .pictures {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
-    gap: 27.1px;
+    gap: 38px;
+    position: relative;
+    left: -90px;
   }
   
   .picture {
@@ -2059,7 +2383,7 @@ footer {
   }
   aside {
     position: relative;
-    top: -15vh;
+    top: -70px;
     left: 5vw;
   }
   .act-title {
@@ -2079,7 +2403,7 @@ footer {
     height: 30%;
     padding-right: 30px;
     position: relative;
-    top: -50px;
+    top: 10px;
     left: -50px;
     font-family: 'Raleway', sans-serif;
   }
