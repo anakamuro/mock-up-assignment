@@ -1459,7 +1459,7 @@ header .text {
   font-size: 1.8rem;
   text-shadow: 0.5px 0.5px #000;
   position: relative;
-  left: px;
+  left: 0px;
   top: 20px;
 }
 .side-container .fa-chart-line {
