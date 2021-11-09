@@ -142,14 +142,6 @@
     text-shadow: .5px .5px #000;
     font-size: 1.2rem;
   }
-
-  .pills .pill {
-  border-radius: 9999px;
-  background-color: white;
-  border: 2px solid  hsl(0, 0%, 90%);
-  font-family: 'Raleway', sans-serif;
-   }
-
    .pills{
      position: relative;
      top: -24px;
@@ -418,6 +410,13 @@ footer {
       overflow: scroll;
       scroll-behavior: smooth;
     }
+    .pills .pill {
+      border-radius: 9999px;
+      background-color: white;
+      border: 2px solid  hsl(0, 0%, 90%);
+      font-family: 'Raleway', sans-serif;
+      margin: 1%;
+       }
     b {
       font-family: 'Raleway', sans-serif;
     }
@@ -507,8 +506,11 @@ footer {
     display: block;
   }
   .pills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
-    top: 20px;
+    top: 0px;
     left: 0px;
   }
   button.pill:nth-child(1){
@@ -516,29 +518,19 @@ footer {
     height: 37px;
     display: inline;
     font-size: 0.8rem;
-    position: relative;
-    top: -25px;
   }
   button.pill:nth-child(2){
     width: 140px;
     height: 37px;
-    position: relative;
-    top: -25px;
-    left: 5px;
   }
   button.pill:nth-child(3) {
     width: 160px;
     height: 37px;
-    position: relative;
-    top: -15px;
-    left: 0px;
     }
 
   button.pill:nth-child(4) {
     width: 180px;
     height: 37px;
-    position: relative;
-    top: -5px;
     }
 
   .info {
@@ -997,18 +989,9 @@ aside .pictures .picture .old-port {
   .filters {
     display: block;
   }
-  .pills {
-    position: relative;
-    top: 20px;
-    left: 0px;
-    padding-bottom: 40px;
-  }
   button.pill:nth-child(4) {
     width: 180px;
     height: 37px;
-    position: relative;
-    top: 30px;
-    left: -167px;
 }
   .info {
     padding: 3%;
@@ -1145,8 +1128,6 @@ button.pill:nth-child(1) {
   height: 37px;
   display: inline;
   font-size: 0.8rem;
-  position: relative;
-  top: -25px;
 }
 .cal-text {
   position: relative;
@@ -1310,16 +1291,10 @@ nav .nav-right ul li:nth-of-type(3) {
 button.pill:nth-child(3) {
   width: 240px;
   height: 50px;
-  position: relative;
-  top: -10px;
-  left: 0px;
 }
 button.pill:nth-child(4) {
   width: 260px;
   height: 50px;
-  position: relative;
-  top: 0px;
-  left: 0px;
 }
 header .text {
   font-weight: 900;
@@ -1340,12 +1315,6 @@ header .text {
   object-fit: fill;
   font-size: 1.5rem;
 }
-.pills {
-  position: relative;
-  top: 20px;
-  left: 0px;
-  padding-bottom: 0px;
-}
 .ava {
   position: relative;
   left: 0px;
@@ -1359,7 +1328,6 @@ header .text {
   width: 100px;
 }
 .info {
-  padding: 10%;
   margin: 0 auto;
   position: relative;
   left: 0px;
@@ -1375,8 +1343,6 @@ header .text {
   background-color: white;
   color: #0065FC;
   position: relative;
-  top: 40px;
-  left: -55px;
   display: inline;
   border: 2px solid #F2F2F2;
 }
@@ -1484,15 +1450,10 @@ button.pill:nth-child(1) {
   height: 50px;
   display: inline;
   font-size: 0.8rem;
-  position: relative;
-  top: -25px;
 }
 button.pill:nth-child(2) {
   width: 200px;
   height: 50px;
-  position: relative;
-  top: -25px;
-  left: 5px;
 }
 }
 @media only screen and (min-width: 768px){
@@ -1561,7 +1522,7 @@ nav .nav-right ul li a:nth-of-type(1) {
 }
 .pills {
   position: relative;
-  top: 100px;
+  top: 80px;
   left: 0px;
   padding-bottom: 0px;
 }
@@ -1603,22 +1564,6 @@ header .text {
     top: 50px;
     left: 25px;
   }
-
-  .pill:nth-child(1) {
-    position: relative;
-    left: 15px;
-  }
-  header .pills .pill:nth-child(2) {
-    position: relative;
-    left: 15px;
-    top: -30px;
-  }
-  
-  header .pills .pill:nth-child(3) {
-    position: relative;
-    top: -25px;
-    left: 10px;
-    }
     .pill i {
       background-color: white;
       border-radius: 50%;
@@ -1632,16 +1577,10 @@ header .text {
     position: relative;
     top: 10px;
   }
-    .pill:nth-child(4) {
-    position: relative;
-    left: 15px;
-  }
+  
   button.pill:nth-child(4) {
     width: 260px;
     height: 50px;
-    position: relative;
-    top: 0px;
-    left: 15px;
 }
 .ava {
   position: relative;
@@ -1904,11 +1843,6 @@ header .text {
     position: relative;
     top: 120px;
   }
-  header .pills .pill:nth-child(2) {
-    position: relative;
-    left: 15px;
-    top: -25px;
-}
   .side-add1 {
     text-shadow: .5px .5px #000;
     font-size: 2rem;
@@ -2201,9 +2135,6 @@ aside .pictures .picture:nth-child(2) .pic2 {
 button.pill:nth-child(4) {
   width: 260px;
   height: 50px;
-  position: relative;
-  top: -25px;
-  left: 0px;
 }
 .side-container .fa-chart-line {
   float: right;
@@ -2514,24 +2445,12 @@ nav .nav-right ul li:nth-child(3) {
 
   .filters {
     display: inline;
-    position: relative;
-    top: -3vh;
   }
 
   .pills {
     display: inline;
     position: relative;
-    top: 85px;
-  }
-  header .pills .pill:nth-child(3) {
-    position: relative;
-    top: -25px;
-    left: 20px;
-}
-  .pills .pill:nth-child(4) {
-   position: relative;
-   top: -25px;
-   left: 25px;
+    top: 35px;
   }
   .card-container .cards {
     display: grid;
@@ -2587,10 +2506,6 @@ nav .nav-right ul li:nth-child(3) {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     gap: 25px;
-  }
-  .filter {
-    position: relative;
-    top: 95px;
   }
   header .info {
     position: relative;
