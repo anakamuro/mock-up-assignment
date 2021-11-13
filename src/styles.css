@@ -410,6 +410,15 @@ footer {
       overflow: scroll;
       scroll-behavior: smooth;
     }
+    .aside-text {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      font-size: 1.05rem;
+      text-shadow: 0.5px 0.5px #000;
+      position: relative;
+      left: 10px;
+  }
     .pills .pill {
       border-radius: 9999px;
       background-color: white;
@@ -452,9 +461,8 @@ footer {
         text-shadow: .5px .5px #000;
       }
       .stars2 {
-        position: relative;
-        left: 10px;
-        top: 10px;
+        padding-left: 5%;
+        padding-bottom: 5%;
       }
       .down {
         position: relative;
@@ -727,28 +735,21 @@ footer {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
    }
-   .old-text{
-     position: relative;
-     top: 0px;
-   }
    .cal-text {
      position: relative;
      top: 0px;
      left: 10px;
    }
    .content1 {
-     position: relative;
-     left: 10px;
+     padding-left: 10px;
      color: black;
    }
    .content2 {
-    position: relative;
-    left: 10px;
+    padding-left: 10px;
     color: black;
   }
   .stars {
-    position: relative;
-    left: 10px;
+    padding-left: 10px;
   }
   .card-container {
     width: 100%;;
@@ -783,24 +784,25 @@ footer {
     left: -10px;
     }
     .card-content2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 90%;
+      height: 100%;
       line-height: 90%;
       font-size: 100%;
     }
     .side-add {
       font-weight: normal;
       font-size: 0.7rem;
-      position: relative;
-      top: 10px;
-      left: 10px;
+      padding-left: 5%;
     }
     .side-add1 {
       font-size: 0.7rem;
       font-weight: 900;
       text-shadow: 0.5px 0.5px #000;
-      position: relative;
-      top: 10px;
-      left: 10px;
+      padding-top: 5%;
+      padding-left: 5%;
     }
   .side-container .fa-chart-line{
       float: right;
@@ -819,7 +821,7 @@ footer {
     flex-direction: row;
     background-color: white;
     border-radius: 5%;
-    height: 24vh;
+    height: 100%;;
     width: 88%;
     margin: 0 auto;
     border-radius: 25px;
@@ -895,8 +897,9 @@ footer {
   .card-container .cards .card-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     line-height: 10px;
-    gap: 5px;
+    gap: 7px;
   }
   i .fa-eur{
     display: inline-block;
@@ -929,6 +932,9 @@ footer {
     overflow-x: hidden !important;
     max-width: 100% !important;
   }
+  .stars{
+    padding-left: 20px;
+  }
   nav .nav-right ul li a:nth-of-type(1) {
     border-bottom: 3px solid  hsl(216, 100%, 49%);
     color:hsl(216, 100%, 49%);
@@ -944,10 +950,6 @@ footer {
     top: -65px;
     left: -90px;
     font-size: 1.3rem;
-  }
-  .star2-2{
-    position: relative;
-    top: -10px;
   }
   .act-title {
     position: relative;
@@ -980,7 +982,7 @@ aside .pictures .picture .old-port {
 }
 .old-text {
   position: relative;
-  top: -50px;
+  top: -20px;
 }
   .search-box {
     position: relative;
@@ -1038,20 +1040,10 @@ aside .pictures .picture .old-port {
       font-size: 1.07rem;
       font-weight: 900;
       text-shadow: 0.5px 0.5px #000;
-      position: relative;
-      top: 10px;
-      left: 10px;
   }
   .side-add {
     font-weight: normal;
     font-size: 1.1rem;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-.side2{
-  position: relative;
-  top: -10px;
 }
   .side-container .fa-chart-line{
       float: right;
@@ -1131,7 +1123,7 @@ button.pill:nth-child(1) {
 }
 .cal-text {
   position: relative;
-  top: -10px;
+  top: 5px;
   left: 10px;
 }
   .lists {
@@ -1151,16 +1143,16 @@ button.pill:nth-child(1) {
   .card-container .cards .card-content {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.1rem;
   }
   .content1 {
-    position: relative;
-    left: 10px;
-    font-size: 1.5rem;
+    padding-left: 20px;
+    font-size: 1.2rem;
 }
 .content2 {
-  position: relative;
-  left: 10px;
+  padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 5px;
 }
@@ -1181,7 +1173,7 @@ button.pill:nth-child(1) {
       flex-direction: row;
       background-color: white;
       border-radius: 5%;
-      height: 20vh;
+      height: 100%;
       width: 88%;
       margin: 0 auto;
       border-radius: 25px;
@@ -1194,6 +1186,9 @@ button.pill:nth-child(1) {
     left: 20px;
 }
   .card-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     line-height: 110%;
     font-size: 110%;
@@ -1214,6 +1209,13 @@ button.pill:nth-child(1) {
 }
 
 @media only screen and (min-width: 540px){
+  .card-container .cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.1rem;
+}
   aside {
     position: relative;
     left: 90px;
@@ -1382,7 +1384,7 @@ header .text {
   flex-direction: row;
   background-color: white;
   border-radius: 5%;
-  height: 26vh;
+  height: 100%;
   width: 88%;
   margin: 0 auto;
   border-radius: 25px;
@@ -1392,7 +1394,7 @@ header .text {
   font-size: 1.8rem;
   text-shadow: 0.5px 0.5px #000;
   position: relative;
-  left: 0px;
+  left: 20px;
   top: 20px;
 }
 .side-container .fa-chart-line {
@@ -1457,6 +1459,13 @@ button.pill:nth-child(2) {
 }
 }
 @media only screen and (min-width: 768px){
+  .card-container .cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.1rem;
+}
    nav .nav-right ul li a:nth-child(1) {
     border: none;
   }
@@ -1480,7 +1489,7 @@ nav .nav-right ul li a:nth-of-type(1) {
   position: relative;
   left: -30px;
   top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 120px;
   padding-top: 20px;
 }
 .fa-circle {
@@ -1587,16 +1596,9 @@ header .text {
   left: 55px;
   top: 0px;
 }
-  .side-add {
-    font-weight: normal;
-    font-size: 1.8rem;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
 .number {
   font-weight: 900;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-shadow: 0.5px 0.5px #000;
 }
 
@@ -1758,8 +1760,8 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 35vh;
-    width: 23vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1769,7 +1771,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 14vh;
-    width: 20vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1779,7 +1781,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 11vh;
-    width: 20vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1789,7 +1791,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 35vh;
-    width: 23vw;
+    width: 100%;;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1799,7 +1801,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 9vh;
-    width: 20vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -1809,7 +1811,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 14vh;
-    width: 20vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
    }
@@ -1824,6 +1826,7 @@ header .text {
    .cal-text {
      position: relative;
      left: 5px;
+     top: -5px;
    }
    .not-text {
      position: relative;
@@ -1840,8 +1843,8 @@ header .text {
    }
   .side-container {
     height: 100%;
-    position: relative;
-    top: 120px;
+    margin: 3%;
+    padding: 3%;
   }
   .side-add1 {
     text-shadow: .5px .5px #000;
@@ -1860,7 +1863,14 @@ header .text {
     top: 15px;
     left: -70px;
   }
+  .side-add {
+    font-weight: normal;
+    font-size: 1.8rem;
+}
   .side-container .cards-2 .card-2 .card-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     line-height: 120%;
     font-size: 150%;
@@ -1870,9 +1880,8 @@ header .text {
   .cards-2 {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    position: relative;
-    left: -20px;
+    gap: 5%;
+    padding-right: 20px;
   }
   
   .card-2 {
@@ -1880,6 +1889,7 @@ header .text {
     flex-direction: row;
     background-color: white;
     border-radius: 5%;
+    height: 100%;
   }
   aside {
     position: relative;
@@ -1892,23 +1902,23 @@ header .text {
     left: -4vw;
   }
   aside .pictures .picture:nth-child(2) .pic1  {
-    width: 20vw;
+    width: 100%;
     height: 18vh; 
    }
    aside .pictures .picture:nth-child(2) .pic2  {
-    width: 20vw;
+    width: 100%;
     height: 15vh; 
    }
    aside .pictures .picture:nth-child(4) .pic1  {
-    width: 20vw;
+    width: 100%;
     height: 15vh; 
    }
    aside .pictures .picture:nth-child(4) .pic2  {
-    width: 20vw;
+    width: 100%;
     height: 18vh; 
    }
   aside .pictures .picture:nth-child(1)  {
-    width: 23vw;
+    width: 100%;
     height: 35vh;
   }
   aside .pictures .picture:nth-child(3) {
@@ -1918,8 +1928,8 @@ header .text {
   
   .pictures {
     display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-gap: 5px;
+    grid-template-columns: repeat(4, 22.5vw);
+    grid-gap: 2%;
     position: relative;
     top: 20px;
   }
@@ -1929,6 +1939,9 @@ header .text {
   justify-content: space-between;
 }
 .aside-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   font-size: 1rem;
   position: relative;
   top: 5px;
@@ -1942,6 +1955,14 @@ header .text {
 }
 
 @media only screen and (min-width: 1024px){
+  .card-container .cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
 .container .card-container .cards a .card .auber {
   background-image: url('../src/img/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
   background-repeat: no-repeat;
@@ -2056,7 +2077,7 @@ aside .pictures .picture .old-port {
   background-size: cover;
   background-position: center;
   height: 35vh;
-  width: 23vw;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -2066,7 +2087,7 @@ aside .pictures .picture .old-port {
   background-size: cover;
   background-position: center;
   height: 14vh;
-  width: 23vw;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -2076,7 +2097,7 @@ aside .pictures .picture .old-port {
   background-size: cover;
   background-position: center;
   height: 11vh;
-  width: 23vw;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -2086,7 +2107,7 @@ aside .pictures .picture .old-port {
   background-size: cover;
   background-position: center;
   height: 35vh;
-  width: 23vw;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -2096,7 +2117,7 @@ aside .pictures .picture .old-port {
   background-size: cover;
   background-position: center;
   height: 11vh;
-  width: 20vw;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -2106,16 +2127,16 @@ aside .pictures .picture .old-port {
   background-size: cover;
   background-position: center;
   height: 14vh;
-  width: 20vw;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
  }
  aside .pictures .picture:nth-child(2) .pic1 {
-  width: 23vw;
+  width: 100%;
   height: 18vh;
 }
 aside .pictures .picture:nth-child(2) .pic2 {
-  width: 23vw;
+  width: 100%;
   height: 15vh;
 }
  .container1 img {
@@ -2150,36 +2171,20 @@ button.pill:nth-child(4) {
    font-size: 1.5rem;
  }
  .side-container .cards-2 .card-2 .card-content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   line-height: 130%;
   font-size: 200%;
 }
 .side-container .cards-2 .card-2 .side-add1 {
-  font-size: 3rem;
-  line-height: 60px;;
+  font-size: 2.5rem;
+  line-height: 50px;;
 }
 .side-add {
   font-weight: normal;
   font-size: 2.6rem;
-  position: relative;
-  top: 10px;
-  left: 10px;
-}
-.star2-2 {
-  position: relative;
-  top: -40px;
-}
-.star2-3 {
-  position: relative;
-  top: -40px;
-}
-.side2 {
-  position: relative;
-  top: -20px;
-}
-.side3 {
-  position: relative;
-  top: -20px;
 }
 .fa-chart-line {
   font-size: 2rem;
@@ -2190,7 +2195,7 @@ button.pill:nth-child(4) {
   font-size: 170%;
 }
 .content1 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 900;
   text-shadow: .5px .5px #000;
 }
@@ -2218,10 +2223,11 @@ button.pill:nth-child(4) {
   position: relative;
   top: 40px;
   display: grid;
-  grid-template-columns: 24vw 24vw 24vw 24vw;
-  grid-gap: 20px;
+  grid-template-columns: repeat(4, 22.5vw);
+  gap: 2.5%;
   position: relative;
   top: 20px;
+  left: -65px;
 }
 .pop{
   font-size: 2.5rem;
@@ -2238,9 +2244,12 @@ aside .pictures .picture {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 20vw;
+  width: 100%;
 }
 .aside-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   font-size: 1rem;
   position: relative;
   top: 15px;
@@ -2255,8 +2264,8 @@ aside .pictures .picture {
   flex-direction: row;
   background-color: white;
   border-radius: 5%;
-  position: relative;
-  left: -10px;
+  height: 100%;
+  padding-right: 0%;
 }
 footer {
   position: relative;
@@ -2266,21 +2275,36 @@ footer {
 }
 
 @media only screen and (min-width: 1280px){
+  .pictures{
+    position: relative;
+    top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 22.5vw);
+    gap: 2.5%;
+    position: relative;
+    top: 20px;
+    left: -80px;
+  }
+  .side-container .cards-2 .card-2 .card-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 130%;
+    font-size: 200%;
+  }
   .cards-2 {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    position: relative;
-    left: -20px;
+    padding-left: 20px;
 }
 .card-2 {
   display: flex;
   flex-direction: row;
   background-color: white;
   border-radius: 5%;
-  position: relative;
-  left: -10px;
-  height: 50vh;
+  height: 100%;
 }
   .side-container .cards-2 .card-2 .card-content2 {
     width: 100%;
@@ -2291,18 +2315,12 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
- .star2-1 {
-  position: relative;
-  top: -10px;
-}
 .card-container .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 60vh 60vh 60vh;
   grid-gap: 3%;
   padding: 5%;
-  position: relative;
-  top: 50px;
 }
 .container .card-container .cards a .card .auber {
   background-image: url(../src/img/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -2342,7 +2360,7 @@ aside {
   background-size: cover;
   background-position: center;
   height: 11vh;
-  width: 20vw;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -2352,11 +2370,14 @@ aside {
   background-size: cover;
   background-position: center;
   height: 14vh;
-  width: 20vw;
+  width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
 .aside-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   font-size: 1rem;
   position: relative;
   top: 10px;
@@ -2372,14 +2393,13 @@ footer {
   height: 600px;
 }
 .content1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 900;
   text-shadow: 0.5px 0.5px #000;
   color: black;
 }
 .content2 {
-  position: relative;
-  left: 10px;
+  padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 5px;
   color: black;
@@ -2401,16 +2421,15 @@ nav .nav-right ul li:nth-child(3) {
 }
 .number {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-shadow: 0.5px 0.5px #000;
 }
 .card-container .cards .card-content {
   display: flex;
-  position: relative;
-  top: 5%;
+  justify-content: space-between;
   flex-direction: column;
-  font-size: 3rem;
-  height: 20vh;
+  font-size: 1.5rem;
+  gap: 20px;
 }
 .card-container .cards .card {
   width: 100%;
@@ -2455,7 +2474,7 @@ nav .nav-right ul li:nth-child(3) {
   .card-container .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 12.5rem 12.5rem;
+    grid-template-rows: 26.5vh 26.5vh;
     gap: 30px;
     position: relative;
     left: -30px;
@@ -2470,13 +2489,13 @@ nav .nav-right ul li:nth-child(3) {
   .side-container {
     grid-area: b;
     width: 95%;
-    height: 620px;
+    height: 720px;
     background-color: hsl(0, 0%, 90%);
     margin: 2%;
     border-radius: 2%;
     position: relative;
     left: -10px;
-    top: 45px;
+    top: -20px;
     padding-right: 0px;
   }
 .pop {
@@ -2493,13 +2512,10 @@ nav .nav-right ul li:nth-child(3) {
   left: -45px;
 }
   .side-container .cards-2 {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    gap: 5%;
-    position: relative;
-    left: 25px;
-    top: 20px;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+      padding-left: 20px;
   }
 
   .lists {
@@ -2545,7 +2561,7 @@ header .text {
     padding: 2%;
     border-radius: 2%;
     position: relative;
-    top: 40px;
+    top: -30px;
     left: -40px;
   }
   .title {
@@ -2594,7 +2610,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 8.125rem;
+    height: 17.5vh;
     width: 100%;;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -2606,7 +2622,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 8.125rem;
+    height: 17.5vh;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -2618,7 +2634,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 8.125rem;
+    height: 17.5vh;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -2630,7 +2646,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 8.125rem;
+    height: 17.5vh;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -2642,7 +2658,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 8.125rem;
+    height: 17.5vh;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -2654,7 +2670,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 8.125rem;
+    height: 17.5vh;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius:  25px;
@@ -2666,7 +2682,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 20vh;
     width: 70%;
     border-top-left-radius: 25px;
     border-bottom-left-radius:  25px;
@@ -2678,7 +2694,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 20vh;
     width: 70%;
     border-top-left-radius: 25px;
     border-bottom-left-radius:  25px;
@@ -2690,7 +2706,7 @@ header .text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 20vh;
     width: 70%;
     border-top-left-radius: 25px;
     border-bottom-left-radius:  25px;
@@ -2703,7 +2719,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 55vh;
-    width: 22vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -2713,7 +2729,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 23vh;
-    width: 22vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -2723,7 +2739,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 18vh;
-    width: 22vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -2733,7 +2749,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 55vh;
-    width: 22vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -2743,7 +2759,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 18vh;
-    width: 22vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -2753,7 +2769,7 @@ header .text {
     background-size: cover;
     background-position: center;
     height: 23vh;
-    width: 22vw;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
    }
@@ -2780,27 +2796,27 @@ header .text {
     font-size: 80%;
   }
    aside .pictures .picture:nth-child(2) .pic1  {
-    width: 22vw;
+    width: 100%;
     height: 29vh; 
    }
    aside .pictures .picture:nth-child(2) .pic2  {
-    width: 22vw;
+    width: 100%;
     height: 24vh; 
    }
    aside .pictures .picture:nth-child(4) .pic1  {
-    width: 22vw;
+    width: 100%;
     height: 24vh; 
    }
    aside .pictures .picture:nth-child(4) .pic2  {
-    width: 22vw;
+    width: 100%;
     height: 29vh; 
    }
   aside .pictures .picture:nth-child(1)  {
-    width: 22vw;
+    width: 100%;
     height: 60vh;
   }
   aside .pictures .picture:nth-child(3) {
-    width: 22vw;
+    width: 100%;
     height: 60vw;
   }
   
@@ -2824,30 +2840,21 @@ header .text {
     position: relative;
     left: 10px;
    }
-
- 
    .card a:hover {
      transform: scale(1.1);
    }
-
-   .cards-2 {
-     width: 90%;
-     height: 90%;
-   }
-
    .card-2 {
      width: 100%;
-     height: 153px;
+     height: 100%;
    }
-  .container .card-container .cards .card .card-content {
+  .card-container .cards .card-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  height: 30vh;
-  line-height: 8px;
-  font-size: 100%;
-  position: relative;
-  top: -10px;
+  height: 30%;
+  letter-spacing: 0.5;
+  line-height: 0.5em;
   font-size: 1rem;
 }
 .number {
@@ -2858,14 +2865,27 @@ header .text {
  .content1 {
    font-size: 1rem;
  }
+ .picture{
+   display: flex;
+   flex-direction: column;
+ }
  
-   .pictures {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    gap: 38px;
-    position: relative;
-    left: -90px;
-  }
+ .aside-text {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+  font-size: 1rem;
+}
+ .pictures{
+  position: relative;
+  top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 22.2vw);
+  gap: 2.5%;
+  position: relative;
+  top: 20px;
+  left: -90px;
+}
   
   .picture {
     display: flex;
