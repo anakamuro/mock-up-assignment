@@ -142,31 +142,6 @@
     background-color: #DEEBFF;
     color: blue;
   }
-
-  .pill i:nth-child(1){
-   float: left;
-   justify-content: center;
-    align-items: center;
-  }
-
-  .pill i:nth-child(2){
-    float: left;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pill i:nth-child(3){
-    justify-content: center;
-    align-items: center;
-    float: left;
-  }
-
-  .pill i:nth-child(4){
-    float: left;
-    justify-content: center;
-    align-items: center;
-  }
-
   .pill:hover {
     background-color: #0065FC;
     transform: scale(1.1);
@@ -328,11 +303,46 @@ footer {
       'aside'
       'footer';
     }
+    .nav-right ul li.acti  a{
+      color: black;  
+      border-bottom-color: #F2F2F2;
+    }
     .nav-right {
       display: flex;
       position: relative;
       left: -80px;
   }
+  .pill i:nth-child(1){
+    float: left;
+    justify-content: center;
+     align-items: center;
+     position: relative;
+     left: -7px;
+   }
+ 
+   .pill i:nth-child(2){
+     float: left;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     left: -7px;
+   }
+ 
+   .pill i:nth-child(3){
+     justify-content: center;
+     align-items: center;
+     float: left;
+     position: relative;
+     left: -7px;
+   }
+ 
+   .pill i:nth-child(4){
+     float: left;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     left: -7px;
+   }
   .fa-info {
     width: 20px;
     height: 20px;
@@ -439,13 +449,14 @@ footer {
     left: 50px;
   }
 
-  nav .nav-right ul li a:nth-of-type(1) {
+  nav .nav-right ul li:nth-child(1) a {
     border-bottom: 3px solid  hsl(216, 100%, 49%);
     color:hsl(216, 100%, 49%);
   }
-  nav .nav-right ul li a:nth-of-type(2) {
-    border-bottom: 3px solid #F2F2F2;
-    color: #F2F2F2;
+  nav .nav-right ul li:nth-child(2) a {
+    border-bottom: 3px solid black;
+    border-bottom-color: #F2F2F2;
+    color: black;
   }
   nav .nav-right ul li:nth-of-type(3){
     position: relative;
