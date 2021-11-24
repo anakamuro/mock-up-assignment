@@ -11,6 +11,7 @@
    </head>
 <body class="container1">
   <header>
+    <div class="up-header">
     <img src="src/img/images/logo/Reservia.svg" alt="logo" class="logo">
     <nav>
 		  <div class="nav-right">
@@ -21,9 +22,9 @@
 			 </ul>
 		  </div>
   	</nav>
+    </div>
 	  <div class="clear-fix">
-	    <h4 class="text">Find a place for your dream</h4>
-      <h4 class="text">vacation</h4>
+	    <h4 class="text">Find a place for your dream vacation</h4>
 	    <span class="down">Downtown or in nature</span><br><br>
 	    <div class="search-box">
        <button class="icon-area display-none"><i class="fas fa-map-marker-alt"></i></button>
@@ -31,21 +32,21 @@
         <input type="submit" class="search-btn" value="search" />
     </div> <br>
       
-      <div class="filters"><b class="filter">Filters</b></div> &nbsp; 
+      <div class="filters"><div class="filter">Filters</div>
         <div class="pills">
            <button class="pill"><i class="fas fa-money-bill-wave"></i><b class="p-text low">Low cost</b></button>
            <button class="pill"><i class="fas fa-heart"></i><b class="p-text romantic">Romantic</b></button>
            <button class="pill"><i class="fas fa-child"></i><b class="p-text family">Family-friendly</b></button>
            <button class="pill"><i class="fas fa-dog"></i><b class="p-text pets">Pets Allowed</b></button>
          </div>
-         <div class="info"><i class="fas fa-info fa-circle"></i> &nbsp; <span class="infotext">More&nbsp;than&nbsp;500&nbsp;accomodations&nbsp;are<br>
-          <span class="ava">available in this city</span></span></div>
+         </div>
+         <div class="info"><i class="fas fa-info fa-circle"></i>&nbsp;<span class="infotext">More than 500 accomodations are available in this city</span>
       </div>
     </header>
 
 
        <div id="Accommodations" class="card-container">
-                 <b class="title">Accommodations in Marseille</b><br/><br/>
+                 <b class="title">Accommodations in Marseille</b>
            <div class="cards">
                 <a href="#Aubergela" target="_blank">
                   <div class="card">
@@ -148,7 +149,9 @@
         </div>
       </div>
         <div class="side-container">
-               <pre><b class="pop">Most Popular</b><i class="fas fa-chart-line"></i></pre>
+               <div class="title-icon">
+               <b class="pop">Most&nbsp;Popular</b><i class="fas fa-chart-line"></i>
+               </div>
             <div class="cards-2">
               <div class="card-2">
                   <div class="morning"></div>
@@ -167,7 +170,7 @@
                <div class="card-2">
                    <div class="au-coeur"></div>
                    <div class="card-content2">
-                     <b class="side-add1">Au coeur de l'eau Bed<br> and Breakfast</b><br><br><br>
+                     <b class="side-add1">Au coeur de l'eau Bed and Breakfast</b>
                       <span class="side-add side2">Night starting at <span class="number">71</span><i class="fa fa-eur" aria-hidden="true"></i></span><br><br><br>
                       <div class="stars2 star2-2">
                         <i class="fa fa-star checked" aria-hidden="true"></i>
@@ -198,49 +201,58 @@
            	
       <aside>
           <div id="Activities"><b class="act-title">Activities in Marseille</b></div>
-             <br><br>
+             
          <div class="pictures">
+          <div class="col-1">
+           <div class="picture pic1">
             <a href="#old-port" target="_blank">
-              <div class="picture pic">
                  <div class="old-port pic-part"></div>
-                 <div class="aside-text oldport-text"><b class="old-text">Old Port</b></div>
+                 <div class="aside-text oldport-text"><b class="pic-text">Old Port</b>
               </div>
             </a>
-           <div class="picture">
-         <a href="#pomegues" target="_blank">
-           <div class="pic pic1">
-             <div class="pomegues pic-part"></div>
-             <div class="aside-text pom-text"><b>Pomegues Fort</b></div>
-           </div>
-         </a>
-         <a href="#frioul" target="_blank">
-           <div class="pic pic2">
-             <div class="frioul pic-part"></div>
-             <div class="aside-text fri-text"><b>Frioul Island</b></div>
-           </div>
-         </a>
-       </div>
-         <a href="#calanques" target="_blank"> 
-           <div class="picture pic">
-               <div class="calanques pic-part"></div>
-              <div class="aside-text cal-text"><b class="cal-text">Calanques National Park</b>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="picture pic2">
+              <a href="#pomegues" target="_blank">
+                  <div class="pomegues pic-part"></div>
+                  <div class="aside-text pom-text"><b class="pic-text">Pomegues Fort</b>
+                  </div>
+              </a>
               </div>
-           </div>
-         </a>
-    <div class="picture">
-      <a href="#notre" target="_blank">
-          <div class="pic pic1">
-              <div class="notre-dame pic-part"></div>
-              <div class="aside-text not-text"><b>Notre-Dame-de-la-Garde</b></div>
-          </div>
-      </a>
-      <a href="#longchamp" target="_blank">
-        <div class="pic pic2">
-           <div class="longchamp pic-part"></div>
-           <div class="aside-text lon-text"><b>Longchamp Park</b></div>
-        </div>
-      </a>
-    </div>
+              <div class="picture pic3">
+                <a href="#frioul" target="_blank">
+                    <div class="frioul pic-part"></div>
+                    <div class="aside-text fri-text"><b class="pic-text">Frioul Island</b>
+                    </div>
+                </a>
+                </div>
+                </div>
+                <div class="col-3">
+                <div class="picture pic4">
+                    <a href="#calanques" target="_blank"> 
+                          <div class="calanques pic-part"></div>
+                          <div class="aside-text cal-text"><b class="pic-text">Calanques National Park</b>
+                          </div>
+                    </a>
+                    </div>
+                    </div>
+                    <div class="col-4">
+                    <div class="picture pic5">
+                  <a href="#notre" target="_blank">
+                          <div class="notre-dame pic-part"></div>
+                          <div class="aside-text not-text"><b class="pic-text">Notre-Dame-de-la-Garde</b>
+                          </div>
+                  </a>
+                  </div>
+                  <div class="picture pic6">
+                  <a href="#longchamp" target="_blank">
+                      <div class="longchamp pic-part"></div>
+                      <div class="aside-text lon-text"><b class="pic-text">Longchamp Park</b>
+                      </div>
+                  </a>
+                  </div>
+                  </div>
    </div>
   </aside>
 
