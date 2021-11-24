@@ -439,23 +439,23 @@ aside a {
     flex-wrap: wrap;
   }
   button.pill:nth-child(1){
-    width: 120px;
-    height: 37px;
+    width: 7.5rem;
+    height: 2.313rem;
     display: inline;
     font-size: 0.8rem;
   }
   button.pill:nth-child(2){
-    width: 140px;
-    height: 37px;
+    width: 8.75rem;
+    height: 2.313rem;
   }
   button.pill:nth-child(3) {
-    width: 160px;
-    height: 37px;
+    width: 10rem;
+    height: 2.313rem;
     }
 
   button.pill:nth-child(4) {
-    width: 180px;
-    height: 37px;
+    width: 11.25rem;
+    height: 2.313rem;
     }
 
   .info {
@@ -1275,7 +1275,7 @@ aside .pictures .pic {
   border-radius: 50%;
   border: 1px solid gray;
   padding: 9px;
-  background-color: hsl(0, 0%, 90%);
+  background-color: #DEEBFF;
   color: blue;
   font-size: 1.5rem;
 }
@@ -1486,7 +1486,7 @@ header .text {
       border-radius: 50%;
       border: 1px solid gray;
       padding: 9px;
-      background-color: hsl(0, 0%, 90%);
+      background-color: #DEEBFF;
       color: blue;
       font-size: 1.5rem;
   }
@@ -2423,8 +2423,9 @@ nav .nav-right ul li:nth-child(3) {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+    font-size: 1.1rem;
     position: relative;
-    left: 107%;
+    left: 95%;
 }
 .clear-fix {
   position: relative;
@@ -2443,11 +2444,11 @@ header .filters {
      border-bottom: none;
    }
    nav .nav-right ul li:nth-child(3) {
-    font-size: 2rem;
+    font-size: 1.3rem;
     display: flex;
 }
 header nav {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   display: flex;
   justify-content: flex-end;
   }
@@ -2476,7 +2477,7 @@ header nav {
 
   .card-container .cards {
     display: grid;
-    grid-template-columns: repeat(3, 19vw);
+    grid-template-columns: repeat(3, 18vw);
     grid-template-rows: 27vh 27vh;
     grid-row-gap: 5%;
     grid-column-gap: 3%;
@@ -2514,7 +2515,7 @@ header nav {
   .side-container .cards-2 {
       display: grid;
       grid-template-rows: repeat(3, 19vh);
-      gap: 10%;
+      gap: 3rem;
       padding-left: 7%;
       width: 75%;
       margin-bottom: 5%;
@@ -2522,7 +2523,8 @@ header nav {
 
   .lists {
     display: grid;
-    grid-template-columns: 24.375rem 24.375rem 24.375rem;
+    grid-template-columns: 30% 30% 30%;
+    width: 100%;
     gap: 2%;
     margin-top: 4%;
     margin-left: 4%;
@@ -2535,15 +2537,12 @@ header nav {
   .nav-right ul li {
     list-style: none;
     display: inline-block;
-    padding: 12px;
-    font-size: 2rem;
-    position: relative;
-    top: 40px;
-    left: -120px;
-    padding-bottom: 100px;
+    font-size: 1.3rem;
+    padding-left: 4.5rem;
 }
   .container1 img {
    padding-top: 5%;
+   padding-bottom: 5%;
 }
 header .text {
   font-weight: 900;
@@ -2847,7 +2846,7 @@ header .text {
     grid-area: aside;
 }
    footer {
-    width: 85.375rem;
+    width: 100%;
     font-family: 'Raleway', sans-serif;
     position: relative;
     top: -20%;
@@ -2855,4 +2854,24 @@ header .text {
   .info {
     padding-top: 20px;
 }
+button.pill:nth-child(1){
+  width: 10rem;
+  height: 2.313rem;
+  display: inline;
+  font-size: 0.8rem;
+}
+button.pill:nth-child(2){
+  width: 10rem;
+  height: 2.313rem;
+}
+button.pill:nth-child(3) {
+  width: 11.25rem;
+  height: 2.313rem;
+  }
+
+button.pill:nth-child(4) {
+  width: 13rem;
+  height: 2.313rem;
+  }
+
  }
