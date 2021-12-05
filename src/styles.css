@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
   nav {
     display: flex;
     align-items: center;
@@ -16,21 +15,10 @@
    .card-container .cards .card a {
     color: black;
   }
-  .search-box {
-    background: #efefef;
-    border-radius: 10px 0 0 10px;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    width: 130px;
-    height: 35px;
-    position: relative;
-  }
-
+ 
   .search-box button {
     border: none;
   }
-
   button .icon-area {
     border-radius: 10px 0 0 10px;
     height: 60px;
@@ -43,25 +31,8 @@
     height: 30px;
     border: 2px solid hsl(0, 0%, 90%);
   }
-
-   .fa-map-marker-alt{
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 1px;
-    height: 1px;
-  }
-  
-  .search-btn {
-    background-color:  #0065FC;
-    color: white;
-    border-radius: 0 10px 10px 0;
-    height: 36px;
-    width: 120px;
-  }
-
   .search-box i {
-    color: black;
+    color: white;
   }
   .text {
     font-family: 'Raleway', sans-serif;
@@ -86,12 +57,11 @@
     position: relative;
     left: 10px;
 }
-
-  .filters {
+ .filters {
     padding-right: 20px;
     display: inline;
     font-weight: 900;
-    text-shadow: .5px .5px #000;
+    text-shadow: .3px .3px #000;
     font-size: 1.2rem;
   }
   .pill i {
@@ -143,13 +113,11 @@
     grid-template-rows: 200px 200px;
     gap: 5px;
   }
-
   .card {
    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
    background-color: white;
    border-radius: 5%;
   }
-
    .container .cards .card a{
     color: black;
   }
@@ -162,11 +130,6 @@
 .checked {
   color:  #0065FC;
 }
-
-pre {
-  font-family: 'Raleway', sans-serif;
-}
-
 .card-2 {
   display: flex;
   flex-direction: row;
@@ -193,31 +156,69 @@ aside a {
 
 @media only screen and (min-width : 320px){
   html {
+    max-width: 100% !important;
     overflow-x: hidden !important;
     scroll-behavior: smooth;
+    box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  -webkit-box-sizing:border-box; 
+  -ms-box-sizing:border-box;
   }
    body {
-      max-width: 100%;
       font-family: 'Raleway', sans-serif;
       box-sizing: border-box;
       height: 100%;
+      overflow: scroll;
       overflow-x: hidden !important;
       overflow-y: hidden !important;
       max-width: 100% !important;
       scrollbar-width: none;
       -ms-overflow-style: none;
-      overflow: scroll;
       scroll-behavior: smooth;
     }
-    header {
-      display: flex;
-      flex-direction: column;
-      padding-left: 0.813rem;
-  }
   .clear-fix {
     clear: both;
     position: relative;
     top: -0.8rem;
+  }
+  i .fa-map-marker-alt{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 1px;
+    height: 1px;
+    color: black;
+  }
+  .fas {
+    color: black;
+  }
+  .search-box {
+    background: #efefef;
+    color: black;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 241px;
+    height: 35px;
+    position: relative;
+  }
+  .search-btn {
+    background-color:  #0065FC;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    height: 36px;
+    width: 120px;
+    display: none;
+  }
+  .icon-area {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 36px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
     .container1{
       display: grid;
@@ -227,6 +228,18 @@ aside a {
       'card-container'
       'aside'
       'footer';
+    }
+    .sub-icon {
+      width: 100px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-radius: 10px;;
+      background-color: #0065FC;
+    }
+    i .fa-search {
+      color: white;
     }
     .footer-title {
       font-size: 1.2rem;
@@ -367,6 +380,8 @@ aside a {
       display: flex;
       flex-direction: column;
       padding-left: 0.813rem;
+      box-sizing:border-box; 
+    width: calc(100% - 0.813rem);
     }
   nav .nav-right ul li .sign{
     text-combine-upright: all;
@@ -414,11 +429,16 @@ aside a {
     border-bottom-color: #F2F2F2;
     color: black;
   }
+  .side2{
+    position: relative;
+    top: 5%;
+  }
 
   header .text {
     font-size: 1.3rem;
     font-weight:900;
-    text-shadow: .5px .5px #000;
+    text-shadow: .1px .1px #000;
+    font-family: 'Raleway', sans-serif;
   }
   .filters {
     display: block;
@@ -611,7 +631,7 @@ aside a {
       padding-left: 5%;
     }
   .fa-chart-line{
-   padding-left: 42%;
+   padding-left: 36%;
    padding-top: 10%;
     }
    .cards {
@@ -889,6 +909,24 @@ button.pill:nth-child(1) {
     gap: 5px;
     font-size: 1.1rem;
 }
+.sub-icon {
+  width: 295px;
+  height: 65px;
+  font-size: 1.5em;
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+ .fa-search{
+  position: relative;
+  left: 14px;
+  top: -1px;
+}
+.icon-area{
+  position: relative;
+  left: 3px;
+  top: -13px;
+}
 header {
   padding-left: 1.2rem;
 }
@@ -940,7 +978,7 @@ button.pill:nth-child(4) {
 header .text {
   font-weight: 900;
   font-size: 2rem;
-  text-shadow: 0.5px 0.5px #000;
+  text-shadow: 0.3px 0.3px #000;
 }
 .down {
   font-size: 1.4rem;
@@ -1245,7 +1283,7 @@ nav .nav-right ul li a:nth-of-type(1) {
 header .text {
   font-weight: 900;
   font-size: 2rem;
-  text-shadow: 0.5px 0.5px #000;
+  text-shadow: 0.3px 0.3px #000;
 }
 .down {
   font-size: 1.4rem;
@@ -1498,6 +1536,9 @@ nav .nav-right ul li:nth-child(3) {
   position: relative;
   top: -4.2rem;
   left: 8rem;
+}
+.sub-icon {
+  font-size: 1.2em;
 }
 .logo {
   padding-bottom: 2%;
@@ -2152,5 +2193,22 @@ button.pill:nth-child(4) {
   position: relative;
   top: 0%;
   width: 100px;
+}
+.sub-icon {
+  display: none;
+}
+ .search-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+}
+.fa-map-marker-alt {
+  position: absolute;
+  left: 17px;
 }
  }
