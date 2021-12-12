@@ -24,16 +24,15 @@
     border-radius: 10px 0 0 10px;
     height: 60px;
     width: 30px;
-    display: none;
-  }
-  .search-box i {
-    color: white;
+    color: black;
   }
   .text {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
   }
-
+  .sub-icon {
+    color: white;
+  }
   ::-webkit-input-placeholder {
     color: black;
     font-weight: 900;
@@ -176,13 +175,14 @@ aside a {
     position: relative;
     top: -0.8rem;
   }
-  i .fa-map-marker-alt{
+  button i  .fas .fa-map-marker-alt{
     position: absolute;
     left: 10px;
     top: 10px;
     width: 1px;
     height: 1px;
-    color: black;
+    color: black !important;
+    z-index: 3;
   }
   .fas {
     color: black;
@@ -206,7 +206,7 @@ aside a {
     width: 120px;
     display: none;
   }
-  .icon-area {
+  button.icon-area {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     height: 36px;
@@ -214,6 +214,7 @@ aside a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black !important;
   }
     .container1{
       display: grid;
